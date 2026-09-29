@@ -113,6 +113,14 @@ describe('Visitor Map block', {testIsolation: false}, function() {
 	before(function() {
 		login(adminUser, adminPassword);
 
+		// The plugins grid is what records a plugin copied into place as installed:
+		// without that record the core does not count the block as enabled, and the
+		// sidebar setting does not offer it. A manager always goes through the grid.
+		cy.window({log: false}).then((win) => cy.wrap(
+			win.fetch(pageUrl('$$$call$$$/grid/settings/plugins/settings-plugin-grid/fetch-grid'), {credentials: 'same-origin'}).then((response) => response.status),
+			{log: false, timeout: 60000}
+		)).should('eq', 200);
+
 		enablePlugin().then((answer) => {
 			expect(answer, 'the plugin was switched on').to.contain('"status":true');
 		});
