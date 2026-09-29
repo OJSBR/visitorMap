@@ -158,3 +158,19 @@ msgstr "یک رنگ انتخاب کنید."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "کوزوو"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "کیفیت داده"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "پالایهٔ ضدخزنده"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "دسترسی‌های ربات‌هایی را که خود را مرورگر جا می‌زنند حذف می‌کند (دسته‌های نشانی IP، مرورگرهای ناموجود، کلاینت‌های خودکار). آمار رسمی OJS را تغییر نمی‌دهد."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "پالایهٔ ضدخزنده از {$date} اعمال شده است"

@@ -158,3 +158,19 @@ msgstr "Ընտրեք գույն։"
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Կոսովո"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Տվյալների որակ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Հակասքրեյփեր զտիչ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Հեռացնում է դիտարկիչ ձևացող ռոբոտների մուտքերը (IP հասցեների երամներ, գոյություն չունեցող դիտարկիչներ, ավտոմատ հաճախորդներ)։ Չի փոխում OJS-ի պաշտոնական վիճակագրությունը։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Հակասքրեյփեր զտիչը կիրառվում է {$date}-ից"

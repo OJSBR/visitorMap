@@ -158,3 +158,19 @@ msgstr "Izaberite boju."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Kvalitet podataka"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Filter protiv skrejpera"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Uklanja pristupe robota koji se predstavljaju kao pregledači (rojevi IP adresa, nepostojeći pregledači, automatizovani klijenti). Ne menja zvaničnu statistiku OJS-a."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Filter protiv skrejpera primenjen od {$date}"

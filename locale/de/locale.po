@@ -120,3 +120,15 @@ msgstr "Wählen Sie eine Farbe."
 
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Datenqualität"
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Anti-Scraper-Filter"
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Entfernt Zugriffe von Robotern, die sich als Browser ausgeben (Schwärme von IP-Adressen, nicht existierende Browser, automatisierte Clients). Die offiziellen Statistiken von OJS bleiben unverändert."
+
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Anti-Scraper-Filter angewendet seit {$date}"

@@ -217,8 +217,9 @@ class BlockTest extends PKPTestCase
 
     public function testDefaultsFillWhatWasNeverSaved(): void
     {
+        $pluginSettings = DAORegistry::getDAO('PluginSettingsDAO'); /** @var PluginSettingsDAO $pluginSettings */
         foreach (array_merge(VisitorMapSettingsForm::FIELDS, ['blockTitle']) as $name) {
-            $this->plugin->updateSetting($this->contextId(), $name, '', 'string');
+            $pluginSettings->deleteSetting($this->contextId(), $this->plugin->getName(), $name);
         }
         $settings = $this->plugin->settings($this->contextId());
 
@@ -226,6 +227,47 @@ class BlockTest extends PKPTestCase
         $this->assertSame('unique', $settings['metric']);
         $this->assertSame([], $settings['excludedCountries']);
         $this->assertTrue($settings['showSummary']);
+        $this->assertTrue($settings['antiScraper'], 'a journal that never saved the form gets the filter');
+    }
+
+    /**
+     * The form as the manager saves it: an unticked box is not posted at all,
+     * and must come back unticked, not as the default.
+     */
+    public function testTheFilterSwitchedOffStaysOff(): void
+    {
+        $form = new VisitorMapSettingsForm($this->plugin, $this->contextId());
+        $form->initData();
+        $form->setData('antiScraper', null);
+        $form->execute();
+
+        $this->assertFalse($this->plugin->settings($this->contextId())['antiScraper']);
+        $again = new VisitorMapSettingsForm($this->plugin, $this->contextId());
+        $again->initData();
+        $this->assertFalse((bool) $again->getData('antiScraper'), 'the form opens unticked');
+
+        $again->setData('antiScraper', '1');
+        $again->execute();
+        $this->assertTrue($this->plugin->settings($this->contextId())['antiScraper']);
+    }
+
+    /** Switching the filter changes the block at once, without waiting for a job. */
+    public function testSwitchingTheFilterChangesTheBlockAtOnce(): void
+    {
+        $this->configure(['days' => 7, 'topCount' => 3, 'metric' => 'unique', 'showSummary' => true, 'antiScraper' => true]);
+        $day = date('Y-m-d', strtotime(Core::getCurrentDate() . ' -1 day'));
+        DB::table(VisitorMapMigration::TABLE_DAILY)->insert([
+            ['load_id' => self::LOAD_PREFIX . 'x.log', 'context_id' => $this->contextId(), 'country' => 'US', 'date' => $day, 'metric' => 300, 'metric_unique' => 200, 'metric_clean' => 90, 'metric_unique_clean' => 40],
+            ['load_id' => self::LOAD_PREFIX . 'x.log', 'context_id' => $this->contextId(), 'country' => 'BR', 'date' => $day, 'metric' => 120, 'metric_unique' => 100, 'metric_clean' => 118, 'metric_unique_clean' => 97],
+        ]);
+        (new State())->bumpVersion();
+
+        $html = $this->render();
+        $this->assertMatchesRegularExpression('~<dd>137</dd>~', $html, 'Brazil 97 and the United States 40, without scrapers');
+        $this->assertLessThan(strpos($html, Locale::getCountries(Locale::getLocale())->getByAlpha2('US')->getLocalName()), strpos($html, Locale::getCountries(Locale::getLocale())->getByAlpha2('BR')->getLocalName()), 'Brazil leads once the scrapers are gone');
+
+        $this->configure(['antiScraper' => false]);
+        $this->assertMatchesRegularExpression('~<dd>300</dd>~', $this->render(), 'the core figures with the filter off');
     }
 
     private function contextId(): int

@@ -120,3 +120,15 @@ msgstr "Trieu un color."
 
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Qualitat de les dades"
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Filtre anti-scraper"
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Elimina els accessos de robots que es fan passar per navegadors (eixams d'IP, navegadors inexistents, clients automàtics). No modifica les estadístiques oficials de l'OJS."
+
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Filtre anti-scraper aplicat des del {$date}"

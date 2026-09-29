@@ -1,10 +1,10 @@
 # Visitor Map — OJS plugin
 
 [![OJS](https://img.shields.io/badge/OJS-3.5-brightgreen)](https://pkp.sfu.ca/ojs/)
-[![Version](https://img.shields.io/badge/version-1.0.0.0-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.1.0.0-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/visitorMap/releases/download/1.0.0.0/visitorMap-1.0.0.0.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/visitorMap/releases/download/1.1.0.0/visitorMap-1.1.0.0.tar.gz) — or browse all [Releases](../../releases).
 
 A sidebar block for **Open Journal Systems (OJS)** with a world map of where the accesses to the
 journal come from, over the last days or since a date. It is drawn from the geographic usage
@@ -20,7 +20,7 @@ browser talks to no one but the journal.**
 
 | OJS version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.0 |
+| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.1.0.0 |
 
 38 languages.
 
@@ -45,6 +45,10 @@ of one leak into the other. And all of it duplicates data OJS already collects.
 - The **number of accesses and of countries**, and the **countries with the most accesses**, as
   text: screen readers and search engines get the data, not only a picture.
 - **Unique accesses** (the same reader counted once per article and day) or all accesses.
+- **Anti-scraper filter** (on by default): takes out the accesses of robots that pass for browsers
+  — pools of proxies, browsers that do not exist, automated clients — which the robot list of
+  OJS does not catch. The official statistics of OJS are not touched. See
+  [Anti-scraper filter](#anti-scraper-filter).
 - **Countries can be left out**, for accesses that are mostly data centres.
 - Colours, title (per language) and the length of the list are set per journal.
 - Managers see why the map is empty (geographic statistics off, no data yet, nothing in the
@@ -75,6 +79,7 @@ In the plugin **Settings**:
 | Start date | — | Accesses before this day are never counted. |
 | What to count | Unique accesses | Or all accesses. |
 | Countries to leave out | — | Two-letter codes, e.g. `SG, IE`. |
+| Anti-scraper filter | on | Takes out robots that pass for browsers. Off: exactly the OJS statistics. |
 | Block title | *Access Map* | One per language of the journal. |
 | Show the number of accesses and countries | on | |
 | Countries listed below the map | 5 | 0 to 20. |
@@ -84,6 +89,39 @@ In the plugin **Settings**:
 located by the address they came from. OJS already leaves out known robots, but a share of what
 remains comes from data centres — it is the origin of the accesses, not a headcount of readers.
 Unique accesses are less affected, which is why they are the default.
+
+## Anti-scraper filter
+
+OJS leaves out the robots that declare themselves (the COUNTER list), but not the programs that
+send a browser's user agent. On the journals we looked at they were most of the "visitors" from the
+United States, Singapore and China. With the filter on, the block takes out the accesses that match
+any of four rules, applied to the usage log of each day — none of them a list of names:
+
+| Rule | Condition |
+|---|---|
+| R1 swarm | On one day, one user agent string came from at least 100 addresses, at least 90% of them with a single request, and at most 1.15 requests per address. People read more than one page; a pool of proxies does not. |
+| R2 incoherent | Safari's `AppleWebKit/605` together with a `Chrome/` token, which no browser on a Mac sends (Chrome, Edge, Firefox and Opera on iOS carry `CriOS`, `EdgiOS`, `FxiOS`, `OPiOS`). |
+| R3 not a browser | The user agent does not start with `Mozilla/`. |
+| R4 headless | `HeadlessChrome`, for sites whose robot list does not have it yet. |
+
+The marked accesses are counted exactly as OJS counts accesses — the COUNTER 30-second
+double-click rule for the total, one per address, browser, article and hour for unique accesses —
+and **subtracted from the official figure**, so a day without scrapers shows exactly the OJS
+number. Counting every line of a real day of 56 thousand lines this way gives the OJS total to the
+unit in every country.
+
+- The filter needs the day's usage log, which OJS keeps in `usageStats/archive` (compressed or
+  not). Days whose log is gone use the official figure; when the period starts before the first
+  filtered day, the block says from when the filter applies. Months that only exist in the monthly
+  statistics are not filtered.
+- Switching the option changes the block at once: both figures are always kept, and the block reads
+  the one the journal chose.
+- Upgrading from 1.0 fills in the filtered figures of the days already stored, from their logs, a
+  few days per run.
+- Nothing about the readers is stored: the log is read, counted and let go; the plugin keeps only
+  counts by journal, country and day. Addresses in the OJS log are already hashed.
+- Reading a day's log of 30 MB takes under a second and about 30 MB of memory; a log that has
+  not changed is not read again.
 
 ## How it works (technical)
 
@@ -139,9 +177,15 @@ statistics, the plugin's summed history remains.
   whole months; the block rendered through the template manager (the map file in the public
   folder, the numbers, the list, the cache between two views, a new file for new data, nothing
   for readers and the reason for managers); the outlines, the colour scale and the SVG; the
-  settings; the classes against the installed PKP and the 38 translations. Counterproof: without
-  the recomputing of the last days, without the comparison before rewriting, and without the
-  cache, the matching tests fail. From the OJS root:
+  settings; the classes against the installed PKP and the 38 translations. The anti-scraper filter:
+  each rule on a log written line by line (readers, a real iOS browser and declared robots left
+  alone), the core's double-click and unique counting, compressed logs, the filtered figures as the
+  core figure minus the scrapers, no figure without a log, the upgrade filling stored days while
+  keeping their history when the core has deleted them, an unchanged day not read again, the
+  migration run twice, the option switched off staying off through the form, and the block changing
+  at once. Counterproof: without the recomputing of the last days, the comparison before rewriting,
+  the cache, the swarm rule, the upgrade filling, the filtered reading or the saving of the option,
+  the matching tests fail. From the OJS root:
 
   ```bash
   lib/pkp/lib/vendor/bin/phpunit --configuration lib/pkp/tests/phpunit.xml --no-coverage "$PWD/plugins/blocks/visitorMap/tests"
@@ -150,7 +194,8 @@ statistics, the plugin's summed history remains.
 - **Cypress** (`cypress/tests/functional/VisitorMap.cy.js`, run by
   [pkp-github-actions](https://github.com/pkp/pkp-github-actions) on every push): the manager puts
   the block in the sidebar through the appearance form, saves the settings and **reads them back
-  from a form the server sends again** (an out-of-range value is refused); the reader sees the map
+  from a form the server sends again** (an out-of-range value is refused, and the anti-scraper
+  filter switched off comes back off); the reader sees the map
   on the home page, loaded lazily and drawn, with the numbers, the list and the chosen colour —
   or, where there are no geographic statistics, no block at all. Sidebar and settings are put back.
 - Verified on OJS 3.5.0.3 with 57 days of daily and two months of monthly statistics, against
@@ -196,7 +241,7 @@ terceiros, e o navegador do leitor não conversa com ninguém além da revista.*
 
 | Versão do OJS | Branch | Release do plugin |
 |---------------|--------|-------------------|
-| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.0 |
+| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.1.0.0 |
 
 38 idiomas.
 
@@ -218,6 +263,10 @@ várias revistas os números de uma contaminam a outra. E tudo isso repete um da
 - O **número de acessos e de países** e os **países com mais acessos**, em texto: leitores de tela
   e buscadores recebem o dado, não só a figura.
 - **Acessos únicos** (o mesmo leitor contado uma vez por artigo e por dia) ou todos os acessos.
+- **Filtro anti-scraper** (ligado por padrão): tira os acessos de robôs que se passam por navegadores
+  — enxames de proxies, navegadores que não existem, clientes automáticos —, que a lista de robôs do
+  OJS não pega. As estatísticas oficiais do OJS não são tocadas. Veja
+  [Filtro anti-scraper](#filtro-anti-scraper).
 - **Países podem ser deixados de fora**, para acessos que vêm sobretudo de data centers.
 - Cores, título (por idioma) e tamanho da lista, por revista.
 - O gerente vê por que o mapa está vazio (estatística geográfica desligada, sem dado ainda, nada no
@@ -247,6 +296,7 @@ Nas **Configurações** do plugin:
 | Data inicial | — | Acessos anteriores a este dia nunca entram na conta. |
 | O que contar | Acessos únicos | Ou todos os acessos. |
 | Países a deixar de fora | — | Códigos de duas letras, por exemplo `SG, IE`. |
+| Filtro anti-scraper | ligado | Tira robôs que se passam por navegadores. Desligado: exatamente as estatísticas do OJS. |
 | Título do bloco | *Mapa de acessos* | Um por idioma da revista. |
 | Mostrar o número de acessos e de países | ligado | |
 | Países listados abaixo do mapa | 5 | De 0 a 20. |
@@ -256,6 +306,38 @@ Nas **Configurações** do plugin:
 localizados pelo endereço de origem. O OJS já descarta robôs conhecidos, mas parte do que sobra vem
 de data centers — é a origem dos acessos, não uma contagem de leitores. Os acessos únicos sofrem
 menos com isso, e por isso são o padrão.
+
+### Filtro anti-scraper
+
+O OJS descarta os robôs que se declaram (lista COUNTER), mas não os programas que mandam o
+identificador de um navegador. Nas revistas que olhamos, eles eram a maior parte dos "visitantes" dos
+Estados Unidos, de Singapura e da China. Com o filtro ligado, o bloco tira os acessos que caem em
+qualquer uma de quatro regras, aplicadas ao log de acesso de cada dia — nenhuma delas uma lista de nomes:
+
+| Regra | Condição |
+|---|---|
+| R1 enxame | Num dia, o mesmo identificador de navegador veio de pelo menos 100 endereços, pelo menos 90% deles com um acesso só, e no máximo 1,15 acesso por endereço. Gente lê mais de uma página; um enxame de proxies não. |
+| R2 incoerente | O `AppleWebKit/605` do Safari junto com `Chrome/`, que nenhum navegador no Mac manda (Chrome, Edge, Firefox e Opera no iOS trazem `CriOS`, `EdgiOS`, `FxiOS`, `OPiOS`). |
+| R3 não é navegador | O identificador não começa com `Mozilla/`. |
+| R4 headless | `HeadlessChrome`, para sites cuja lista de robôs ainda não o tem. |
+
+Os acessos marcados são contados exatamente como o OJS conta — a regra COUNTER de duplo clique de 30
+segundos no total, um por endereço, navegador, artigo e hora nos únicos — e **subtraídos do número
+oficial**, de modo que um dia sem scraper mostra exatamente o número do OJS. Contando assim todas as
+linhas de um dia real de 56 mil linhas, o total bate com o do OJS na unidade, em todos os países.
+
+- O filtro precisa do log do dia, que o OJS guarda em `usageStats/archive` (comprimido ou não). Dias
+  cujo log já não existe usam o número oficial; quando o período começa antes do primeiro dia
+  filtrado, o bloco diz a partir de quando o filtro vale. Meses que só existem na estatística mensal
+  não são filtrados.
+- Trocar a opção muda o bloco na hora: os dois números ficam sempre guardados, e o bloco lê o que a
+  revista escolheu.
+- Quem atualiza da 1.0 tem os números filtrados preenchidos para os dias já guardados, a partir dos
+  logs, alguns dias por rodada.
+- Nada sobre os leitores é guardado: o log é lido, contado e descartado; o plugin só guarda contagens
+  por revista, país e dia. Os endereços no log do OJS já vêm com hash.
+- Ler o log de um dia de 30 MB leva menos de um segundo e cerca de 30 MB de memória; um log que não
+  mudou não é lido de novo.
 
 ### Como funciona (técnico)
 
@@ -314,11 +396,18 @@ as estatísticas diárias, o histórico somado do plugin continua.
   bloco renderizado pelo gerenciador de templates (o arquivo do mapa na pasta pública, os números, a
   lista, o cache entre duas visitas, arquivo novo para dado novo, nada para o leitor e o motivo para
   o gerente); os contornos, a escala de cores e o SVG; as configurações; as classes contra o PKP
-  instalado e os 38 idiomas. Contraprova: sem recalcular os últimos dias, sem comparar antes de
-  regravar e sem o cache, os testes correspondentes reprovam.
+  instalado e os 38 idiomas. O filtro anti-scraper: cada regra num log escrito linha a linha (leitores,
+  um navegador real do iOS e robôs declarados ficam de fora), a contagem de duplo clique e de únicos
+  do núcleo, log comprimido, o número filtrado como o do núcleo menos os scrapers, nenhum número sem
+  log, a atualização preenchendo os dias guardados e mantendo o histórico mesmo quando o núcleo já os
+  apagou, dia sem mudança não relido, a migração rodando duas vezes, a opção desligada continuando
+  desligada pelo formulário, e o bloco mudando na hora. Contraprova: sem recalcular os últimos dias,
+  sem comparar antes de regravar, sem o cache, sem a regra do enxame, sem o preenchimento da
+  atualização, sem a leitura filtrada ou sem gravar a opção, os testes correspondentes reprovam.
 - **Cypress** (`cypress/tests/functional/VisitorMap.cy.js`): o gerente põe o bloco na barra lateral
   pelo formulário de aparência, salva as configurações e **as lê de volta num formulário que o
-  servidor manda de novo** (valor fora da faixa é recusado); o leitor vê o mapa na página inicial,
+  servidor manda de novo** (valor fora da faixa é recusado, e o filtro anti-scraper desligado volta
+  desligado); o leitor vê o mapa na página inicial,
   carregado sob demanda e desenhado, com os números, a lista e a cor escolhida — ou, onde não há
   estatística geográfica, nenhum bloco. Barra lateral e configurações voltam ao que eram.
 - Conferido no OJS 3.5.0.3 com 57 dias de estatística diária e dois meses de mensal, contra totais

@@ -158,3 +158,19 @@ msgstr "Vælg en farve."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Datakvalitet"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Anti-scraper-filter"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Fjerner adgange fra robotter, der udgiver sig for at være browsere (sværme af IP-adresser, browsere der ikke findes, automatiserede klienter). Ændrer ikke OJS' officielle statistikker."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Anti-scraper-filter anvendt siden {$date}"

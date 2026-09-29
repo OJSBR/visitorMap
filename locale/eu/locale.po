@@ -158,3 +158,19 @@ msgstr "Aukeratu kolore bat."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Datuen kalitatea"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Scraperren aurkako iragazkia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Nabigatzaile itxura hartzen duten roboten sarbideak kentzen ditu (IP helbide-sareak, existitzen ez diren nabigatzaileak, bezero automatikoak). Ez ditu OJSren estatistika ofizialak aldatzen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Scraperren aurkako iragazkia {$date} datatik aplikatua"

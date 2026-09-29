@@ -158,3 +158,19 @@ msgstr "Bir renk seçin."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosova"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Veri kalitesi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Kazıyıcı filtresi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Kendini tarayıcı gibi gösteren robotların erişimlerini çıkarır (IP adresi sürüleri, var olmayan tarayıcılar, otomatik istemciler). OJS'nin resmi istatistiklerini değiştirmez."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Kazıyıcı filtresi {$date} tarihinden beri uygulanıyor"

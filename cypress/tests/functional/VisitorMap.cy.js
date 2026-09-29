@@ -200,6 +200,9 @@ describe('Visitor Map block', {testIsolation: false}, function() {
 		cy.get(formSelector + ' input[name="startDate"]').invoke('val', '').trigger('input', {force: true});
 		cy.get(formSelector + ' input[name="colorHighlight"]').invoke('val', '#aa3300').trigger('input', {force: true});
 		cy.get(formSelector + ' input[name="showSummary"]').check({force: true});
+		// The scraper filter comes on for a journal that never saved the form;
+		// switched off and saved, it must come back off.
+		cy.get(formSelector + ' input[name="antiScraper"]').uncheck({force: true});
 		// The same title in every language of the journal, whichever the reader uses.
 		cy.get(formSelector + ' input[name^="blockTitle["]').each(($input) => cy.wrap($input).invoke('val', title).trigger('input', {force: true}));
 		waitFormHandler();
@@ -213,6 +216,7 @@ describe('Visitor Map block', {testIsolation: false}, function() {
 		cy.get(formSelector + ' input[name="topCount"]').should('have.value', '5');
 		cy.get(formSelector + ' input[name="colorHighlight"]').should('have.value', '#aa3300');
 		cy.get(formSelector + ' input[name^="blockTitle["]').first().should('have.value', title);
+		cy.get(formSelector + ' input[name="antiScraper"]').should('not.be.checked');
 
 		// A value out of range is refused with the plugin's message.
 		cy.get(formSelector + ' input[name="days"]').clear().type('9999', {delay: 0});

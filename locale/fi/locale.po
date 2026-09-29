@@ -158,3 +158,19 @@ msgstr "Valitse väri."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Tietojen laatu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Kaavinsuodatin"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Poistaa selaimiksi tekeytyvien robottien käytöt (IP-osoiteparvet, olemattomat selaimet, automaattiset asiakasohjelmat). Ei muuta OJS:n virallisia tilastoja."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Kaavinsuodatin käytössä {$date} alkaen"

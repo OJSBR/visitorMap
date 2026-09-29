@@ -33,6 +33,7 @@
 				</div>
 			</dl>
 			<p class="visitor_map__period">{$visitorMapPeriod|escape}</p>
+			{if $visitorMapFilteredFrom}<p class="visitor_map__period visitor_map__filtered">{$visitorMapFilteredFrom|escape}</p>{/if}
 		{/if}
 
 		{if $visitorMapTop}

@@ -35,6 +35,12 @@
 		{/fbvFormSection}
 	{/fbvFormArea}
 
+	{fbvFormArea id="visitorMapDataQuality" title="plugins.blocks.visitorMap.settings.dataQuality"}
+		{fbvFormSection list=true description="plugins.blocks.visitorMap.settings.antiScraper.description"}
+			{fbvElement type="checkbox" id="antiScraper" checked=$antiScraper label="plugins.blocks.visitorMap.settings.antiScraper"}
+		{/fbvFormSection}
+	{/fbvFormArea}
+
 	{fbvFormArea id="visitorMapDisplay" title="plugins.blocks.visitorMap.settings.display"}
 		{fbvFormSection for="blockTitle"}
 			{fbvElement type="text" label="plugins.blocks.visitorMap.settings.blockTitle" id="blockTitle" value=$blockTitle multilingual=true}

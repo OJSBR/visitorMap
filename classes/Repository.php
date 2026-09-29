@@ -28,12 +28,17 @@ class Repository
      * @param string $to Last day, YYYY-MM-DD.
      * @param bool $unique Unique accesses (true) or all accesses (false).
      * @param string[] $excluded Countries left out, ISO 3166-1 alpha-2.
+     * @param bool $clean Without the accesses the scraper filter found, where
+     *                    there was a log to filter; the core's figure elsewhere.
      *
      * @return array<string,int> Accesses by country, largest first. Countries without accesses are absent.
      */
-    public function byCountry(int $contextId, ?string $from, string $to, bool $unique, array $excluded = []): array
+    public function byCountry(int $contextId, ?string $from, string $to, bool $unique, array $excluded = [], bool $clean = false): array
     {
         $column = $unique ? 'metric_unique' : 'metric';
+        if ($clean) {
+            $column = "COALESCE({$column}_clean, {$column})";
+        }
         $totals = [];
 
         $daily = DB::table(VisitorMapMigration::TABLE_DAILY)
@@ -78,6 +83,16 @@ class Repository
             return substr((string) $month, 0, 4) . '-' . substr((string) $month, 4, 2) . '-01';
         }
         $day = DB::table(VisitorMapMigration::TABLE_DAILY)->where('context_id', '=', $contextId)->min('date');
+
+        return $day === null ? null : substr((string) $day, 0, 10);
+    }
+
+    /**
+     * The first day the scraper filter could be applied to, for the journal.
+     */
+    public function firstFilteredDay(int $contextId): ?string
+    {
+        $day = DB::table(VisitorMapMigration::TABLE_DAILY)->where('context_id', '=', $contextId)->whereNotNull('metric_unique_clean')->min('date');
 
         return $day === null ? null : substr((string) $day, 0, 10);
     }

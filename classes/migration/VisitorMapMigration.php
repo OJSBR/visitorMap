@@ -23,7 +23,6 @@ namespace APP\plugins\blocks\visitorMap\classes\migration;
 use APP\core\Application;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class VisitorMapMigration extends Migration
@@ -31,6 +30,9 @@ class VisitorMapMigration extends Migration
     public const TABLE_DAILY = 'visitor_map_daily';
     public const TABLE_MONTHLY = 'visitor_map_monthly';
     public const TABLE_STATE = 'visitor_map_state';
+
+    /** Counts without the accesses the scraper filter finds, added in 1.1. */
+    public const CLEAN_COLUMNS = ['metric_clean', 'metric_unique_clean'];
 
     /**
      * Create the tables that are missing. Safe to run again: it is also run when
@@ -76,6 +78,16 @@ class VisitorMapMigration extends Migration
             });
         }
 
+        // 1.1: the same counts with the accesses of scrapers taken out (see
+        // ScraperFilter). NULL where there was no usage log to filter with.
+        foreach ([self::TABLE_DAILY, self::TABLE_MONTHLY] as $tableName) {
+            foreach (self::CLEAN_COLUMNS as $column) {
+                if (!Schema::hasColumn($tableName, $column)) {
+                    Schema::table($tableName, fn (Blueprint $table) => $table->bigInteger($column)->nullable());
+                }
+            }
+        }
+
         if (!Schema::hasTable(self::TABLE_STATE)) {
             Schema::create(self::TABLE_STATE, function (Blueprint $table) {
                 $table->comment('Progress of the Visitor Map plugin over the core statistics.');
@@ -90,19 +102,5 @@ class VisitorMapMigration extends Migration
         Schema::dropIfExists(self::TABLE_DAILY);
         Schema::dropIfExists(self::TABLE_MONTHLY);
         Schema::dropIfExists(self::TABLE_STATE);
-    }
-
-    /** Whether all the tables exist. */
-    public static function isInstalled(): bool
-    {
-        return Schema::hasTable(self::TABLE_DAILY)
-            && Schema::hasTable(self::TABLE_MONTHLY)
-            && Schema::hasTable(self::TABLE_STATE);
-    }
-
-    /** The database the tables live in, for the few statements that differ. */
-    public static function isPostgres(): bool
-    {
-        return DB::connection()->getDriverName() === 'pgsql';
     }
 }

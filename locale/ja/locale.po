@@ -158,3 +158,19 @@ msgstr "色を選んでください。"
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "コソボ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "データの品質"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "スクレイパー除外フィルター"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "ブラウザを装うロボットのアクセスを除外します（大量の IP アドレス、存在しないブラウザ、自動クライアント）。OJS の公式統計は変更しません。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "スクレイパー除外フィルター適用: {$date}以降"

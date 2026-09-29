@@ -158,3 +158,19 @@ msgstr "Chọn một màu."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Chất lượng dữ liệu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Bộ lọc chống thu thập tự động"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Loại bỏ lượt truy cập của robot giả làm trình duyệt (bầy địa chỉ IP, trình duyệt không tồn tại, máy khách tự động). Không thay đổi thống kê chính thức của OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Bộ lọc chống thu thập tự động áp dụng từ {$date}"

@@ -158,3 +158,19 @@ msgstr "Επιλέξτε χρώμα."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Κοσσυφοπέδιο"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Ποιότητα δεδομένων"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Φίλτρο κατά των scrapers"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Αφαιρεί τις προσβάσεις ρομπότ που παριστάνουν προγράμματα περιήγησης (σμήνη διευθύνσεων IP, ανύπαρκτα προγράμματα περιήγησης, αυτοματοποιημένοι πελάτες). Δεν αλλάζει τα επίσημα στατιστικά του OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Φίλτρο κατά των scrapers σε εφαρμογή από {$date}"

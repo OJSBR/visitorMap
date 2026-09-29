@@ -32,6 +32,7 @@ use APP\core\Application;
 use APP\plugins\blocks\visitorMap\classes\migration\VisitorMapMigration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use PKP\statistics\PKPStatisticsHelper;
 
 class Aggregator
 {
@@ -55,6 +56,8 @@ class Aggregator
 
     /** @var int[] */
     private array $contextIds = [];
+
+    private ?ScraperFilter $filter = null;
 
     public function __construct(?State $state = null)
     {
@@ -81,8 +84,9 @@ class Aggregator
             $this->changed = false;
             $contextDao = Application::getContextDAO();
             $this->contextIds = DB::table($contextDao->tableName)->pluck($contextDao->primaryKeyColumn)->map(fn ($id) => (int) $id)->all();
+            $this->filter = new ScraperFilter($this->contextIds);
 
-            $finished = $this->daily() && $this->monthly();
+            $finished = $this->daily() && $this->cleanBackfill() && $this->monthly();
 
             if ($this->changed) {
                 $this->state->bumpVersion();
@@ -127,6 +131,8 @@ class Aggregator
             $idCursor = (string) $maxId;
             $this->state->set('dailyIdCursor', $idCursor);
             $this->state->set('dailyDoneThrough', '');
+            // Every load is filtered as it is copied: there is nothing to go back to.
+            $this->state->set('cleanBackfillDone', '1');
         }
         $doneThrough = (string) $this->state->get('dailyDoneThrough', '');
 
@@ -199,9 +205,9 @@ class Aggregator
             ->groupBy('context_id', 'country', 'date')
             ->get();
 
-        $insert = [];
+        $raw = [];
         foreach ($rows as $row) {
-            $insert[] = [
+            $raw[] = [
                 'load_id' => $loadId,
                 'context_id' => (int) $row->context_id,
                 'country' => strtoupper((string) $row->country),
@@ -212,11 +218,14 @@ class Aggregator
         }
 
         $date = self::loadDate($loadId);
-        if ($this->holds($loadId, $date, $insert)) {
+        if ($this->holds($loadId, $date, $raw)) {
             // Nothing changed since the last time: keep the version, and with
-            // it every cache and map built on it.
+            // it every cache and map built on it. The log is not read again
+            // either: an archived log does not change.
             return;
         }
+        $bad = $this->scraperCounts($loadId);
+        $insert = array_map(fn ($row) => self::withClean($row, $bad), $raw);
         DB::transaction(function () use ($loadId, $date, $insert) {
             DB::table(VisitorMapMigration::TABLE_DAILY)
                 ->where(fn ($query) => $query->where('load_id', '=', $loadId)->when($date !== null, fn ($query) => $query->orWhere('date', '=', $date)))
@@ -231,22 +240,124 @@ class Aggregator
 
     /**
      * Whether the plugin already has exactly these rows for the load and its
-     * day, and nothing else.
+     * day, and nothing else, and has filtered them wherever the log allows.
      *
-     * @param array[] $rows
+     * @param array[] $rows Rows as the core has them, without filtered counts.
      */
     private function holds(string $loadId, ?string $date, array $rows): bool
     {
         $current = DB::table(VisitorMapMigration::TABLE_DAILY)
-            ->select('load_id', 'context_id', 'country', 'date', 'metric', 'metric_unique')
+            ->select('load_id', 'context_id', 'country', 'date', 'metric', 'metric_unique', 'metric_unique_clean')
             ->where(fn ($query) => $query->where('load_id', '=', $loadId)->when($date !== null, fn ($query) => $query->orWhere('date', '=', $date)))
-            ->get()
+            ->get();
+        if ($current->contains(fn ($row) => $row->metric_unique_clean === null) && self::logPath($loadId) !== null) {
+            // Stored before the log was there to filter with.
+            return false;
+        }
+        $stored = $current
             ->map(fn ($row) => implode('|', [$row->load_id, (int) $row->context_id, $row->country, substr((string) $row->date, 0, 10), (int) $row->metric, (int) $row->metric_unique]))
             ->sort()->values()->all();
         $wanted = array_map(fn ($row) => implode('|', $row), $rows);
         sort($wanted);
 
-        return $current === $wanted;
+        return $stored === $wanted;
+    }
+
+    /**
+     * The usage log of a load, where the core leaves it once loaded; the site
+     * may have it compressed.
+     */
+    public static function logPath(string $loadId): ?string
+    {
+        $archive = PKPStatisticsHelper::getUsageStatsDirPath() . '/archive/' . basename($loadId);
+        foreach ([$archive, $archive . '.gz'] as $path) {
+            if (is_file($path) && is_readable($path)) {
+                return $path;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * What the scraper filter finds in the log of a load, or null when there is
+     * no log to read.
+     *
+     * @return ?array<string,array{metric:int,metric_unique:int}>
+     */
+    private function scraperCounts(string $loadId): ?array
+    {
+        $path = self::logPath($loadId);
+
+        return $path === null ? null : $this->filter->count($path)['buckets'];
+    }
+
+    /**
+     * A row with its counts without scrapers: the core's own number minus what
+     * the filter found, so a day without scrapers gives exactly the official
+     * figure. Without a log the clean counts stay unknown (null).
+     *
+     * @param ?array<string,array{metric:int,metric_unique:int}> $bad
+     */
+    private static function withClean(array $row, ?array $bad): array
+    {
+        if ($bad === null) {
+            return $row + ['metric_clean' => null, 'metric_unique_clean' => null];
+        }
+        $found = $bad[$row['context_id'] . '|' . $row['country'] . '|' . $row['date']] ?? ['metric' => 0, 'metric_unique' => 0];
+
+        return $row + [
+            'metric_clean' => max(0, $row['metric'] - $found['metric']),
+            'metric_unique_clean' => max(0, $row['metric_unique'] - $found['metric_unique']),
+        ];
+    }
+
+    /**
+     * Once after the upgrade to 1.1: the days the plugin already had get their
+     * counts without scrapers, where the log is still there.
+     *
+     * Only the clean columns are written, from the plugin's own rows. The day
+     * is not read again from the core, which may have deleted it long ago
+     * (daily statistics are not kept by default): the plugin's copy is then the
+     * only one left.
+     */
+    private function cleanBackfill(): bool
+    {
+        if ($this->state->get('cleanBackfillDone') === '1') {
+            return true;
+        }
+        $cursor = (string) $this->state->get('cleanBackfillCursor', '');
+        $loads = DB::table(VisitorMapMigration::TABLE_DAILY)->where('load_id', '>', $cursor)->distinct()->orderBy('load_id')->pluck('load_id')->all();
+
+        $worked = false;
+        foreach ($loads as $loadId) {
+            if ($worked && $this->timeIsUp()) {
+                return false;
+            }
+            $worked = true;
+            $bad = $this->scraperCounts((string) $loadId);
+            if ($bad !== null) {
+                DB::transaction(function () use ($loadId, $bad) {
+                    foreach (DB::table(VisitorMapMigration::TABLE_DAILY)->where('load_id', '=', $loadId)->get() as $row) {
+                        $clean = self::withClean([
+                            'context_id' => (int) $row->context_id,
+                            'country' => $row->country,
+                            'date' => substr((string) $row->date, 0, 10),
+                            'metric' => (int) $row->metric,
+                            'metric_unique' => (int) $row->metric_unique,
+                        ], $bad);
+                        DB::table(VisitorMapMigration::TABLE_DAILY)
+                            ->where('visitor_map_daily_id', '=', $row->visitor_map_daily_id)
+                            ->update(['metric_clean' => $clean['metric_clean'], 'metric_unique_clean' => $clean['metric_unique_clean']]);
+                    }
+                });
+                $this->changed = true;
+            }
+            $this->state->set('cleanBackfillCursor', (string) $loadId);
+        }
+        $this->state->set('cleanBackfillDone', '1');
+
+        return true;
     }
 
     private function monthly(): bool

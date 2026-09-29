@@ -57,7 +57,11 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
         'excludedCountries' => '',
         'colorLand' => '#dde1e6',
         'colorHighlight' => '#1f5fbf',
+        'antiScraper' => true,
     ];
+
+    /** Settings that are switches. */
+    public const SWITCHES = ['showSummary', 'antiScraper'];
     public const MAX_DAYS = 3650;
     public const MAX_TOP = 20;
 
@@ -167,11 +171,16 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
         $settings = [];
         foreach (self::DEFAULTS as $name => $default) {
             $value = $this->getSetting($contextId, $name);
+            if (in_array($name, self::SWITCHES, true)) {
+                // Never saved: the default. Saved: whatever was saved, and a
+                // switch saved off stays off however the database returns it.
+                $settings[$name] = $value === null ? $default : in_array($value, [true, 1, '1', 'true', 'on'], true);
+                continue;
+            }
             $settings[$name] = $value === null || $value === '' ? $default : $value;
         }
         $settings['days'] = max(0, min(self::MAX_DAYS, (int) $settings['days']));
         $settings['topCount'] = max(0, min(self::MAX_TOP, (int) $settings['topCount']));
-        $settings['showSummary'] = (bool) $settings['showSummary'];
         $settings['metric'] = $settings['metric'] === 'total' ? 'total' : 'unique';
         $settings['startDate'] = (string) ($this->getSetting($contextId, 'startDate') ?? '');
         $settings['excludedCountries'] = self::parseCountries((string) $settings['excludedCountries']);
@@ -296,6 +305,7 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
             'visitorMapLegendMin' => $numbers->format(1),
             'visitorMapLegendMax' => $numbers->format($data['max']),
             'visitorMapTop' => $top,
+            'visitorMapFilteredFrom' => $data['filteredFrom'] === null ? '' : __('plugins.blocks.visitorMap.filteredFrom', ['date' => $this->formatDate($data['filteredFrom'], $locale)]),
         ]);
 
         return parent::getContents($templateMgr, $request);
@@ -309,7 +319,8 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
     public function compute($request, int $contextId, ?string $from, string $to, array $settings): array
     {
         $repository = new Repository();
-        $totals = $repository->byCountry($contextId, $from, $to, $settings['metric'] === 'unique', $settings['excludedCountries']);
+        $totals = $repository->byCountry($contextId, $from, $to, $settings['metric'] === 'unique', $settings['excludedCountries'], $settings['antiScraper']);
+        $filteredFrom = $settings['antiScraper'] ? $repository->firstFilteredDay($contextId) : null;
         $renderer = new MapRenderer((string) $settings['colorLand'], (string) $settings['colorHighlight']);
         $world = MapRenderer::world();
 
@@ -319,6 +330,9 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
             'countries' => count($totals),
             'max' => $totals ? max($totals) : 0,
             'firstDay' => $repository->firstDay($contextId),
+            // The filter only reaches days whose usage log was still there: say
+            // so when the period starts before the first of them.
+            'filteredFrom' => $filteredFrom !== null && ($from === null || strcmp($from, $filteredFrom) < 0) ? $filteredFrom : null,
             'palette' => $renderer->palette(),
             'width' => $world['width'],
             'height' => $world['height'],

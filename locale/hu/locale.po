@@ -158,3 +158,19 @@ msgstr "Válasszon színt."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Koszovó"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Adatminőség"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Scraper-szűrő"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Eltávolítja a böngészőnek álcázott robotok hozzáféréseit (IP-címrajok, nem létező böngészők, automatizált kliensek). Nem módosítja az OJS hivatalos statisztikáit."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Scraper-szűrő alkalmazva {$date} óta"

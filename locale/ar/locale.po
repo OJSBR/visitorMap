@@ -158,3 +158,19 @@ msgstr "اختر لونًا."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "كوسوفو"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "جودة البيانات"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "مرشّح مكافحة الكاشطات"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "يزيل مرات الوصول من الروبوتات التي تتنكر في صورة متصفحات (أسراب من عناوين IP، ومتصفحات غير موجودة، وعملاء آليون). لا يغيّر الإحصاءات الرسمية في OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "مرشّح مكافحة الكاشطات مطبّق منذ {$date}"

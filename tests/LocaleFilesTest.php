@@ -36,6 +36,7 @@ class LocaleFilesTest extends PKPTestCase
         'plugins.blocks.visitorMap.lastDays' => ['{$days}'],
         'plugins.blocks.visitorMap.since' => ['{$date}'],
         'plugins.blocks.visitorMap.notice.geoDisabled' => ['{$path}'],
+        'plugins.blocks.visitorMap.filteredFrom' => ['{$date}'],
     ];
 
     protected function localeDir(): string
@@ -72,7 +73,7 @@ class LocaleFilesTest extends PKPTestCase
     {
         $files = $this->files();
         $master = array_keys($files[self::MASTER]->entries);
-        $this->assertCount(38, $master);
+        $this->assertCount(42, $master);
 
         foreach ($files as $locale => $file) {
             $this->assertSame($master, array_keys($file->entries), "Keys of {$locale} differ from " . self::MASTER . '.');

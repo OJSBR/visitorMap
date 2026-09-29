@@ -158,3 +158,19 @@ msgstr "აირჩიეთ ფერი."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "კოსოვო"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "მონაცემთა ხარისხი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "სკრეიპერების ფილტრი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "შლის ბრაუზერად მოჩვენებული რობოტების წვდომებს (IP მისამართების გროვები, არარსებული ბრაუზერები, ავტომატური კლიენტები). არ ცვლის OJS-ის ოფიციალურ სტატისტიკას."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "სკრეიპერების ფილტრი გამოიყენება {$date}-დან"

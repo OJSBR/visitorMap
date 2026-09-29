@@ -158,3 +158,19 @@ msgstr "Wybierz kolor."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosowo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Jakość danych"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Filtr antyscraperowy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Usuwa dostępy robotów podszywających się pod przeglądarki (roje adresów IP, nieistniejące przeglądarki, klienci automatyczni). Nie zmienia oficjalnych statystyk OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Filtr antyscraperowy stosowany od {$date}"

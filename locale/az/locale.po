@@ -158,3 +158,19 @@ msgstr "Rəng seçin."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Məlumatın keyfiyyəti"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Anti-skreyper filtri"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Özünü brauzer kimi göstərən robotların girişlərini çıxarır (IP ünvanı sürüləri, mövcud olmayan brauzerlər, avtomatik müştərilər). OJS-in rəsmi statistikasını dəyişmir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Anti-skreyper filtri {$date} tarixindən tətbiq olunur"

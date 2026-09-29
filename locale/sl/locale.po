@@ -158,3 +158,19 @@ msgstr "Izberite barvo."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Kakovost podatkov"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Filter proti strgalnikom"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Odstrani dostope robotov, ki se izdajajo za brskalnike (roji naslovov IP, neobstoječi brskalniki, samodejni odjemalci). Ne spremeni uradne statistike OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Filter proti strgalnikom uporabljen od {$date}"

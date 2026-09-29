@@ -158,3 +158,19 @@ msgstr "请选择一种颜色。"
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "科索沃"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "数据质量"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "反爬虫过滤"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "移除伪装成浏览器的机器人访问（成群的 IP 地址、不存在的浏览器、自动化客户端）。不会更改 OJS 的官方统计。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "反爬虫过滤自 {$date} 起生效"

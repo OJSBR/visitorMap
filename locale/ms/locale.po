@@ -158,3 +158,19 @@ msgstr "Pilih warna."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Kualiti data"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Penapis anti-pengikis"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Membuang akses robot yang menyamar sebagai pelayar (kawanan alamat IP, pelayar yang tidak wujud, klien automatik). Tidak mengubah statistik rasmi OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Penapis anti-pengikis digunakan sejak {$date}"

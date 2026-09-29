@@ -23,7 +23,7 @@ use PKP\form\validation\FormValidatorPost;
 class VisitorMapSettingsForm extends Form
 {
     /** The settings the form reads and writes, besides the title. */
-    public const FIELDS = ['days', 'startDate', 'metric', 'showSummary', 'topCount', 'excludedCountries', 'colorLand', 'colorHighlight'];
+    public const FIELDS = ['days', 'startDate', 'metric', 'showSummary', 'topCount', 'excludedCountries', 'colorLand', 'colorHighlight', 'antiScraper'];
 
     public function __construct(private VisitorMapPlugin $plugin, private int $contextId)
     {
@@ -121,6 +121,8 @@ class VisitorMapSettingsForm extends Form
         $plugin->updateSetting($contextId, 'excludedCountries', implode(',', VisitorMapPlugin::parseCountries((string) $this->getData('excludedCountries'))), 'string');
         $plugin->updateSetting($contextId, 'colorLand', strtolower((string) $this->getData('colorLand')), 'string');
         $plugin->updateSetting($contextId, 'colorHighlight', strtolower((string) $this->getData('colorHighlight')), 'string');
+        // An unticked box is not posted at all: no value means off.
+        $plugin->updateSetting($contextId, 'antiScraper', (bool) $this->getData('antiScraper'), 'bool');
 
         $titles = array_filter(
             array_map(fn ($title) => trim(strip_tags((string) $title)), (array) $this->getData('blockTitle')),

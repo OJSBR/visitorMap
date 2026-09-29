@@ -27,6 +27,8 @@ use APP\plugins\blocks\visitorMap\classes\Repository;
 use APP\plugins\blocks\visitorMap\classes\State;
 use APP\submission\Submission;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use PKP\statistics\PKPStatisticsHelper;
 use PKP\tests\PKPTestCase;
 
 class AggregatorTest extends PKPTestCase
@@ -39,6 +41,9 @@ class AggregatorTest extends PKPTestCase
 
     /** @var array<string,array> The plugin's tables as they were. */
     private array $saved = [];
+
+    /** @var string[] Usage logs written into the core's archive. */
+    private array $logs = [];
 
     protected function setUp(): void
     {
@@ -67,6 +72,12 @@ class AggregatorTest extends PKPTestCase
 
     protected function tearDown(): void
     {
+        foreach ($this->logs as $log) {
+            if (is_file($log)) {
+                unlink($log);
+            }
+        }
+        $this->logs = [];
         DB::table(Aggregator::SOURCE_DAILY)->where('load_id', 'like', 'usage_events_2099%')->delete();
         DB::table(Aggregator::SOURCE_MONTHLY)->where('context_id', $this->contextId)->whereIn('month', [200011, 200012])->delete();
         foreach ($this->saved as $table => $rows) {
@@ -206,6 +217,121 @@ class AggregatorTest extends PKPTestCase
         $this->assertSame(['BR' => 12 + 13, 'PT' => 3 + 3], $repository->byCountry($this->contextId, '2099-01-12', '2099-01-13', false));
         $this->assertSame([], $repository->byCountry($this->contextId, '2099-02-01', '2099-02-28', true));
         $this->assertSame('2000-11-01', $repository->firstDay($this->contextId));
+    }
+
+    /**
+     * The core's own number minus what the filter finds in the day's log;
+     * a day without a log has no filtered number.
+     */
+    public function testTheFilteredCountsAreTheCoreMinusTheScrapers(): void
+    {
+        $this->seedDays();
+        $this->writeLog('2099-01-13', [
+            ['tool1', 'msh-pdfmin/1', 'PT'],
+            ['tool2', 'msh-pdfmin/1', 'PT'],
+            ['reader', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36', 'BR'],
+        ]);
+
+        (new Aggregator())->run(30.0);
+
+        $this->assertSame(['BR' => [13, 11, 13, 11], 'PT' => [3, 2, 1, 0]], $this->dailyWithClean('2099-01-13'), 'Portugal loses its two scraper accesses, Brazil keeps the official figure');
+        $this->assertSame(['BR' => [12, 10, null, null], 'PT' => [3, 2, null, null]], $this->dailyWithClean('2099-01-12'), 'no log, no filtered number');
+
+        $repository = new Repository();
+        $this->assertSame(['BR' => 11 + 10, 'PT' => 2 + 2], $repository->byCountry($this->contextId, '2099-01-12', '2099-01-13', true));
+        $this->assertSame(['BR' => 11 + 10, 'PT' => 0 + 2], $repository->byCountry($this->contextId, '2099-01-12', '2099-01-13', true, [], true), 'where there was no log the core figure is used');
+        // The installation may have logs of its own for earlier days.
+        $first = $repository->firstFilteredDay($this->contextId);
+        $this->assertNotNull($first);
+        $this->assertLessThanOrEqual(0, strcmp($first, '2099-01-13'));
+    }
+
+    /**
+     * After the upgrade, days already stored get their filtered numbers from
+     * the plugin's own rows, and the stored history is kept even when the core
+     * has deleted the day.
+     */
+    public function testTheBackfillFillsStoredDaysAndKeepsTheirHistory(): void
+    {
+        $this->insertDaily('2099-01-01', ['PT' => [9, 7]]);
+        $this->seedDays();
+        (new Aggregator())->run(30.0);
+        $this->assertSame(['PT' => [9, 7, null, null]], $this->dailyWithClean('2099-01-01'));
+
+        // The state of a site that ran 1.0: no backfill done yet.
+        (new State())->forget('cleanBackfillDone');
+        (new State())->forget('cleanBackfillCursor');
+        $this->writeLog('2099-01-01', [['tool1', 'msh-pdfmin/1', 'PT'], ['tool2', 'msh-pdfmin/1', 'PT']]);
+        DB::table(Aggregator::SOURCE_DAILY)->where('load_id', $this->loadId('2099-01-01'))->delete();
+
+        (new Aggregator())->run(30.0);
+
+        $this->assertSame(['PT' => [9, 7, 7, 5]], $this->dailyWithClean('2099-01-01'));
+        $this->assertSame('1', (new State())->get('cleanBackfillDone'));
+    }
+
+    /**
+     * An archived log does not change: a day whose core figures did not change
+     * and that was already filtered is not read again on the next runs.
+     */
+    public function testAnUnchangedFilteredDayIsNotReadAgain(): void
+    {
+        $this->seedDays();
+        $this->writeLog('2099-01-13', [['tool1', 'msh-pdfmin/1', 'PT']]);
+        (new Aggregator())->run(30.0);
+        $this->assertSame([3, 2, 2, 1], $this->dailyWithClean('2099-01-13')['PT']);
+
+        // Were the log read again, the day would lose a second access.
+        file_put_contents(end($this->logs), str_replace('tool1', 'tool1', (string) file_get_contents(end($this->logs))) . str_replace('tool1', 'tool2', (string) file_get_contents(end($this->logs))));
+        (new Aggregator())->run(30.0);
+
+        $this->assertSame([3, 2, 2, 1], $this->dailyWithClean('2099-01-13')['PT']);
+    }
+
+    public function testTheMigrationRunsTwice(): void
+    {
+        (new VisitorMapMigration())->up();
+        (new VisitorMapMigration())->up();
+
+        foreach ([VisitorMapMigration::TABLE_DAILY, VisitorMapMigration::TABLE_MONTHLY] as $table) {
+            foreach (VisitorMapMigration::CLEAN_COLUMNS as $column) {
+                $this->assertTrue(Schema::hasColumn($table, $column), "{$table}.{$column}");
+            }
+        }
+    }
+
+    /** @param array<int,string[]> $visits [visitor, user agent, country] */
+    private function writeLog(string $day, array $visits): void
+    {
+        $archive = PKPStatisticsHelper::getUsageStatsDirPath() . '/archive';
+        if (!is_dir($archive)) {
+            mkdir($archive, 0755, true);
+        }
+        $lines = [];
+        foreach ($visits as $index => [$visitor, $agent, $country]) {
+            $lines[] = json_encode([
+                'time' => $day . sprintf(' 08:%02d:00', $index), 'ip' => hash('sha256', $visitor), 'userAgent' => $agent,
+                'canonicalUrl' => 'https://example.org/article/view/' . $this->submissionId, 'assocType' => 1048585,
+                'contextId' => $this->contextId, 'submissionId' => $this->submissionId, 'representationId' => null,
+                'submissionFileId' => null, 'fileType' => null, 'country' => $country, 'region' => null, 'city' => null,
+                'institutionIds' => [], 'version' => '3.5.0.3', 'issueId' => null, 'issueGalleyId' => null,
+            ]);
+        }
+        $path = $archive . '/' . $this->loadId($day);
+        $this->assertFileDoesNotExist($path, 'a real log with the name of the test');
+        file_put_contents($path, implode("\n", $lines) . "\n");
+        $this->logs[] = $path;
+    }
+
+    /** @return array<string,array> [total, unique, total filtered, unique filtered] by country */
+    private function dailyWithClean(string $day): array
+    {
+        $rows = [];
+        foreach (DB::table(VisitorMapMigration::TABLE_DAILY)->where('context_id', $this->contextId)->where('date', $day)->orderBy('country')->get() as $row) {
+            $rows[$row->country] = [(int) $row->metric, (int) $row->metric_unique, $row->metric_clean === null ? null : (int) $row->metric_clean, $row->metric_unique_clean === null ? null : (int) $row->metric_unique_clean];
+        }
+
+        return $rows;
     }
 
     private function loadId(string $day): string

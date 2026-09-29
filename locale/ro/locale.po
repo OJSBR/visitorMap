@@ -158,3 +158,19 @@ msgstr "Alegeți o culoare."
 #, fuzzy
 msgid "plugins.blocks.visitorMap.country.XK"
 msgstr "Kosovo"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.dataQuality"
+msgstr "Calitatea datelor"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper"
+msgstr "Filtru anti-scraper"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Elimină accesările roboților care se dau drept browsere (roiuri de adrese IP, browsere inexistente, clienți automați). Nu modifică statisticile oficiale OJS."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.filteredFrom"
+msgstr "Filtru anti-scraper aplicat din {$date}"
