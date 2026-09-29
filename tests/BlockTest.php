@@ -35,7 +35,6 @@ use PKP\context\Context;
 use PKP\core\Core;
 use PKP\core\PKPRequest;
 use PKP\core\Registry;
-use PKP\db\DAORegistry;
 use PKP\facades\Locale;
 use PKP\plugins\PluginRegistry;
 use PKP\plugins\PluginSettingsDAO;
@@ -94,11 +93,10 @@ class BlockTest extends PKPTestCase
                 DB::table($table)->insert($chunk);
             }
         }
-        $pluginSettings = DAORegistry::getDAO('PluginSettingsDAO'); /** @var PluginSettingsDAO $pluginSettings */
         foreach ($this->savedSettings as $name => $value) {
             if ($value === null) {
                 // Never saved before the test: removed, not left empty.
-                $pluginSettings->deleteSetting($this->contextId(), $this->plugin->getName(), $name);
+                $this->forgetSetting($name);
             } else {
                 $this->plugin->updateSetting($this->contextId(), $name, $value, is_int($value) ? 'int' : (is_bool($value) ? 'bool' : 'string'));
             }
@@ -217,9 +215,8 @@ class BlockTest extends PKPTestCase
 
     public function testDefaultsFillWhatWasNeverSaved(): void
     {
-        $pluginSettings = DAORegistry::getDAO('PluginSettingsDAO'); /** @var PluginSettingsDAO $pluginSettings */
         foreach (array_merge(VisitorMapSettingsForm::FIELDS, ['blockTitle']) as $name) {
-            $pluginSettings->deleteSetting($this->contextId(), $this->plugin->getName(), $name);
+            $this->forgetSetting($name);
         }
         $settings = $this->plugin->settings($this->contextId());
 
@@ -268,6 +265,28 @@ class BlockTest extends PKPTestCase
 
         $this->configure(['antiScraper' => false]);
         $this->assertMatchesRegularExpression('~<dd>300</dd>~', $this->render(), 'the core figures with the filter off');
+    }
+
+    /**
+     * Remove a setting, as if it had never been saved. Not through
+     * PluginSettingsDAO::deleteSetting(), which filters on a "plugin_Name"
+     * column: MySQL does not mind the case, PostgreSQL has no such column.
+     */
+    private function forgetSetting(string $name): void
+    {
+        $settings = new class () extends PluginSettingsDAO {
+            public function forget(int $contextId, string $pluginName, string $name): void
+            {
+                $pluginName = static::_normalizePluginName($pluginName);
+                DB::table('plugin_settings')
+                    ->where('plugin_name', $pluginName)
+                    ->whereRaw('COALESCE(context_id, 0) = ?', [$contextId])
+                    ->where('setting_name', $name)
+                    ->delete();
+                Cache::forget($this->_getCacheId($contextId, $pluginName, true));
+            }
+        };
+        $settings->forget($this->contextId(), $this->plugin->getName(), $name);
     }
 
     private function contextId(): int
