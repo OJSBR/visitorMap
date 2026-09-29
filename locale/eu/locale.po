@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: eu\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Sarbideen mapa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Albo-barrako blokea, aldizkarirako sarbideen jatorria mundu-mapa batean erakusten duena, azken egunetan edo data jakin batetik. OJSk dagoeneko gordetzen dituen erabilera-estatistika geografikoak erabiltzen ditu: ez zaie ezer bidaltzen beste zerbitzu batzuei."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Sarbideen mapa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Aldizkarirako sarbideak zein herrialdetatik datozen nabarmentzen duen mundu-mapa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Herrialdeak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Sarbide gehien dituzten herrialdeak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Sarbide bakarrak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Sarbideak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Azken {$days} egunak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date} datatik"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa hutsik dago, erabilera-estatistika geografikoak desgaituta daudelako. Guneko administratzaile batek {$path} atalean gai ditzake (herrialde-maila nahikoa da). Aldizkariaren kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa agertuko da erabilera-estatistikak datu geografikoekin prozesatzen direnean, normalean gaitu eta hurrengo egunean. Aldizkariaren kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Ez dago herrialde ezaguneko sarbiderik maparako zehaztutako aldian. Aldizkariaren kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Sarbideen mapa: erabilera-estatistika geografikoak batu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapak sarbideak zein herrialdetatik datozen erakusten du, OJSren erabilera-estatistiken arabera. Orduro eguneratzen da, dagoeneko prozesatutako estatistiketatik, atzora artekoak."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Aldia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Egun kopurua"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Mapak egun kopuru hau hartzen du, atzora arte. Erabili 0 hasiera-datatik aurrera dena erakusteko."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Idatzi egun kopuru oso bat, 0 eta 3650 artean."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Hasiera-data"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Aukerakoa. Egun honen aurreko sarbideak ez dira inoiz zenbatzen, egun kopurua edozein dela ere; adibidez, aldizkariaren berrabiarazte batetik aurrera soilik zenbatzeko."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Idatzi etorkizunekoa ez den data baliodun bat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Zer zenbatu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Sarbide bakarrek irakurle bera behin zenbatzen dute artikulu eta egun bakoitzeko, eta trafiko automatizatuak gutxiago eragiten die."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Aukeratu zer zenbatu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Kanpoan utzi beharreko herrialdeak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Aukerakoa. Bi hizkiko herrialde-kodeak (ISO 3166-1), komaz bereiziak, adibidez \"SG, IE\". Sarbideak batez ere datu-zentroetatik datozen herrialdeetarako erabilgarria."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Erabili bi hizkiko herrialde-kodeak (ISO 3166-1), komaz bereiziak."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Bistaratzea"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Blokearen izenburua"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Erakutsi sarbide eta herrialde kopurua"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Maparen azpian zerrendatutako herrialdeak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0tik (zerrendarik ez) 20ra."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Idatzi 0 eta 20 arteko zenbaki oso bat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Sarbiderik gabeko herrialdeen kolorea"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Sarbide gehien dituzten herrialdeen kolorea"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Aukeratu kolore bat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

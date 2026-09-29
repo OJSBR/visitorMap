@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ca\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mapa d'Accessos"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc de la barra lateral amb un mapamundi de l'origen dels accessos a la revista, en els darrers dies o des d'una data. Fa servir les estadístiques geogràfiques d'ús que l'OJS ja desa: no s'envia res a altres serveis."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mapa d'accessos"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapamundi que destaca els països des d'on s'accedeix a la revista"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Països"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Països amb més accessos"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Accessos únics"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Accessos"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Darrers {$days} dies"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Des del {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "El mapa és buit perquè les estadístiques geogràfiques d'ús estan desactivades. Un administrador del lloc les pot activar a {$path} (n'hi ha prou amb el nivell de país). Només els gestors de la revista veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "El mapa apareixerà quan les estadístiques d'ús es processin amb dades geogràfiques, normalment l'endemà d'activar-les. Només els gestors de la revista veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "No hi ha accessos amb país conegut en el període definit per al mapa. Només els gestors de la revista veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mapa d'accessos: sumar les estadístiques geogràfiques d'ús"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "El mapa mostra els països des d'on s'accedeix, segons les estadístiques d'ús de l'OJS. S'actualitza cada hora, a partir de les estadístiques ja processades, que arriben fins ahir."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Període"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Nombre de dies"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "El mapa abasta aquest nombre de dies, fins ahir. Feu servir 0 per mostrar-ho tot des de la data inicial."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Indiqueu un nombre enter de dies, de 0 a 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Data inicial"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opcional. Els accessos anteriors a aquest dia no es compten mai, sigui quin sigui el nombre de dies; per exemple, per comptar només des d'un rellançament de la revista."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Indiqueu una data vàlida que no sigui futura."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Què es compta"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Els accessos únics compten el mateix lector una vegada per article i per dia, i es veuen menys afectats pel trànsit automatitzat."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Trieu què es compta."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Països que s'exclouen"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opcional. Codis de país de dues lletres (ISO 3166-1), separats per comes, per exemple \"SG, IE\". Útil per a països amb accessos que provenen sobretot de centres de dades."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Feu servir codis de país de dues lletres (ISO 3166-1) separats per comes."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Presentació"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Títol del bloc"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Mostra el nombre d'accessos i de països"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Països llistats sota el mapa"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "De 0 (sense llista) a 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Indiqueu un nombre enter de 0 a 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Color dels països sense accessos"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Color dels països amb més accessos"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Trieu un color."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

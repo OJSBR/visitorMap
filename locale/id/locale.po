@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: id\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Peta Akses"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok bilah sisi dengan peta dunia asal akses ke jurnal, dalam beberapa hari terakhir atau sejak suatu tanggal. Menggunakan statistik penggunaan geografis yang sudah disimpan OJS: tidak ada yang dikirim ke layanan lain."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Peta akses"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Peta dunia yang menyoroti negara-negara asal akses ke jurnal"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Negara"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Negara dengan akses terbanyak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Akses unik"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Akses"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "{$days} hari terakhir"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Sejak {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Peta kosong karena statistik penggunaan geografis dinonaktifkan. Administrator situs dapat mengaktifkannya di {$path} (tingkat negara sudah cukup). Hanya pengelola jurnal yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Peta akan muncul setelah statistik penggunaan diproses dengan data geografis, biasanya sehari setelah diaktifkan. Hanya pengelola jurnal yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Tidak ada akses dengan negara yang diketahui dalam periode yang ditetapkan untuk peta. Hanya pengelola jurnal yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Peta akses: menjumlahkan statistik penggunaan geografis"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Peta menampilkan negara-negara asal akses, menurut statistik penggunaan OJS. Diperbarui setiap jam dari statistik yang sudah diproses, yang mencakup hingga kemarin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Periode"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Jumlah hari"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Peta mencakup sebanyak ini hari hingga kemarin. Gunakan 0 untuk menampilkan semuanya sejak tanggal mulai."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Masukkan jumlah hari berupa bilangan bulat dari 0 hingga 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Tanggal mulai"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opsional. Akses sebelum hari ini tidak pernah dihitung, berapa pun jumlah harinya; misalnya untuk menghitung hanya sejak peluncuran ulang jurnal."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Masukkan tanggal yang valid dan tidak di masa depan."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Yang dihitung"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Akses unik menghitung pembaca yang sama satu kali per artikel dan per hari, serta lebih sedikit terpengaruh lalu lintas otomatis."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Pilih yang dihitung."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Negara yang dikecualikan"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opsional. Kode negara dua huruf (ISO 3166-1), dipisahkan koma, misalnya \"SG, IE\". Berguna untuk negara yang aksesnya sebagian besar berasal dari pusat data."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Gunakan kode negara dua huruf (ISO 3166-1) yang dipisahkan koma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Tampilan"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Judul blok"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Tampilkan jumlah akses dan negara"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Negara yang dicantumkan di bawah peta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Dari 0 (tanpa daftar) hingga 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Masukkan bilangan bulat dari 0 hingga 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Warna negara tanpa akses"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Warna negara dengan akses terbanyak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Pilih warna."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ka\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "წვდომების რუკა"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "გვერდითი ზოლის ბლოკი მსოფლიო რუკით, რომელიც აჩვენებს, საიდან მოდის ჟურნალზე წვდომები ბოლო დღეებში ან გარკვეული თარიღიდან. იყენებს გამოყენების გეოგრაფიულ სტატისტიკას, რომელსაც OJS უკვე ინახავს: არაფერი იგზავნება სხვა სერვისებში."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "წვდომების რუკა"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "მსოფლიო რუკა, რომელიც გამოყოფს ქვეყნებს, საიდანაც ჟურნალზე წვდომა ხდება"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "ქვეყნები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "ყველაზე მეტი წვდომის მქონე ქვეყნები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "უნიკალური წვდომები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "წვდომები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "ბოლო {$days} დღე"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date}-დან"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "რუკა ცარიელია, რადგან გამოყენების გეოგრაფიული სტატისტიკა გამორთულია. საიტის ადმინისტრატორს შეუძლია ჩართოს ის აქ: {$path} (ქვეყნის დონე საკმარისია). ამ შეტყობინებას მხოლოდ ჟურნალის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "რუკა გამოჩნდება, როცა გამოყენების სტატისტიკა დამუშავდება გეოგრაფიული მონაცემებით, ჩვეულებრივ ჩართვიდან მეორე დღეს. ამ შეტყობინებას მხოლოდ ჟურნალის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "რუკისთვის მითითებულ პერიოდში ცნობილი ქვეყნიდან წვდომა არ არის. ამ შეტყობინებას მხოლოდ ჟურნალის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "წვდომების რუკა: გამოყენების გეოგრაფიული სტატისტიკის შეჯამება"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "რუკა აჩვენებს ქვეყნებს, საიდანაც მოდის წვდომები, OJS-ის გამოყენების სტატისტიკის მიხედვით. ახლდება ყოველ საათში უკვე დამუშავებული სტატისტიკიდან, რომელიც გუშინდლამდე აღწევს."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "პერიოდი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "დღეების რაოდენობა"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "რუკა მოიცავს ამდენ დღეს გუშინდლამდე. გამოიყენეთ 0, რათა ყველაფერი აჩვენოს საწყისი თარიღიდან."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "შეიყვანეთ დღეების მთელი რიცხვი 0-დან 3650-მდე."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "საწყისი თარიღი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "არასავალდებულო. ამ დღემდე წვდომები არასდროს ითვლება, დღეების რაოდენობის მიუხედავად; მაგალითად, მხოლოდ ჟურნალის ხელახალი გაშვებიდან დასათვლელად."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "შეიყვანეთ სწორი თარიღი, რომელიც მომავალში არ არის."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "რა დაითვალოს"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "უნიკალური წვდომები ერთსა და იმავე მკითხველს ითვლიან ერთხელ თითო სტატიასა და დღეზე და ნაკლებად განიცდიან ავტომატიზებული ტრაფიკის გავლენას."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "აირჩიეთ, რა დაითვალოს."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "გამოსარიცხი ქვეყნები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "არასავალდებულო. ორასოიანი ქვეყნის კოდები (ISO 3166-1), მძიმით გამოყოფილი, მაგალითად \"SG, IE\". სასარგებლოა ქვეყნებისთვის, რომელთა წვდომები ძირითადად მონაცემთა ცენტრებიდანაა."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "გამოიყენეთ მძიმით გამოყოფილი ორასოიანი ქვეყნის კოდები (ISO 3166-1)."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "ჩვენება"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "ბლოკის სათაური"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "წვდომებისა და ქვეყნების რაოდენობის ჩვენება"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "რუკის ქვემოთ ჩამოთვლილი ქვეყნები"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0-დან (სიის გარეშე) 20-მდე."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "შეიყვანეთ მთელი რიცხვი 0-დან 20-მდე."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "წვდომის არმქონე ქვეყნების ფერი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "ყველაზე მეტი წვდომის მქონე ქვეყნების ფერი"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "აირჩიეთ ფერი."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "კოსოვო"

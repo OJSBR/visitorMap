@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fr\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Carte des Accès"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc de la barre latérale présentant une carte du monde de l'origine des accès à la revue, sur les derniers jours ou depuis une date. Il utilise les statistiques géographiques d'utilisation qu'OJS conserve déjà : rien n'est envoyé à d'autres services."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Carte des accès"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Carte du monde qui met en évidence les pays d'où proviennent les accès à la revue"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Pays"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Pays avec le plus d'accès"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Accès uniques"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Accès"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "{$days} derniers jours"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Depuis le {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "La carte est vide, car les statistiques géographiques d'utilisation sont désactivées. Un administrateur du site peut les activer dans {$path} (le niveau du pays suffit). Seuls les gestionnaires de la revue voient ce message."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "La carte apparaîtra lorsque les statistiques d'utilisation auront été traitées avec des données géographiques, généralement le lendemain de leur activation. Seuls les gestionnaires de la revue voient ce message."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Aucun accès dont le pays est connu dans la période définie pour la carte. Seuls les gestionnaires de la revue voient ce message."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Carte des accès : additionner les statistiques géographiques d'utilisation"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "La carte montre les pays d'où proviennent les accès, d'après les statistiques d'utilisation d'OJS. Elle est mise à jour toutes les heures, à partir des statistiques déjà traitées, qui vont jusqu'à hier."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Période"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Nombre de jours"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "La carte couvre ce nombre de jours, jusqu'à hier. Indiquez 0 pour tout afficher depuis la date de début."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Indiquez un nombre entier de jours, de 0 à 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Date de début"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Facultatif. Les accès antérieurs à ce jour ne sont jamais comptés, quel que soit le nombre de jours ; par exemple, pour ne compter qu'à partir d'une relance de la revue."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Indiquez une date valide qui n'est pas dans le futur."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Ce qui est compté"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Les accès uniques comptent un même lecteur une seule fois par article et par jour, et sont moins sensibles au trafic automatisé."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Choisissez ce qui est compté."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Pays à exclure"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Facultatif. Codes de pays à deux lettres (ISO 3166-1), séparés par des virgules, par exemple « SG, IE ». Utile pour les pays dont les accès proviennent surtout de centres de données."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Utilisez des codes de pays à deux lettres (ISO 3166-1) séparés par des virgules."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Affichage"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Titre du bloc"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Afficher le nombre d'accès et de pays"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Pays listés sous la carte"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "De 0 (aucune liste) à 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Indiquez un nombre entier de 0 à 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Couleur des pays sans accès"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Couleur des pays avec le plus d'accès"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Choisissez une couleur."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

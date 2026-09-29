@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ja\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "アクセスマップ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "直近の日数または指定日以降の、ジャーナルへのアクセス元を世界地図で示すサイドバーのブロックです。OJS がすでに保持している地理的な利用統計を使うため、ほかのサービスには何も送信されません。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "アクセスマップ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "ジャーナルへのアクセス元の国を強調した世界地図"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "国"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "アクセスの多い国"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "ユニークアクセス"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "アクセス"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "過去{$days}日間"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date}以降"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "地理的な利用統計が無効になっているため、地図は空です。サイト管理者が {$path} で有効にできます（国レベルで十分です）。このメッセージはジャーナル管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "地理データ付きで利用統計が処理されると地図が表示されます。通常は有効にした翌日です。このメッセージはジャーナル管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "地図に設定した期間に、国が判明しているアクセスはありません。このメッセージはジャーナル管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "アクセスマップ: 地理的な利用統計を集計"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "OJS の利用統計にもとづき、アクセス元の国を地図に表示します。昨日までの処理済みの統計から、1時間ごとに更新されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "期間"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "日数"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "昨日までのこの日数を地図の対象にします。0 にすると開始日以降のすべてを表示します。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "0 から 3650 までの整数の日数を入力してください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "開始日"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "任意。日数に関係なく、この日より前のアクセスは数えません。たとえばジャーナルの再出発以降だけを数える場合に使います。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "未来ではない有効な日付を入力してください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "数える対象"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "ユニークアクセスは同じ読者を記事ごと・日ごとに1回だけ数えるため、自動化されたトラフィックの影響を受けにくくなります。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "数える対象を選んでください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "除外する国"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "任意。カンマ区切りの2文字の国コード（ISO 3166-1）。例: \"SG, IE\"。アクセスの多くがデータセンターからの国に便利です。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "カンマ区切りの2文字の国コード（ISO 3166-1）を使ってください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "表示"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "ブロックのタイトル"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "アクセス数と国の数を表示する"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "地図の下に表示する国の数"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0（リストなし）から 20 まで。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "0 から 20 までの整数を入力してください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "アクセスのない国の色"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "アクセスの多い国の色"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "色を選んでください。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "コソボ"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sv\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Åtkomstkarta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Block för sidofältet med en världskarta över varifrån åtkomsten till tidskriften kommer, de senaste dagarna eller sedan ett datum. Den använder den geografiska användningsstatistik som OJS redan sparar: inget skickas till andra tjänster."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Åtkomstkarta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Världskarta som framhäver de länder varifrån tidskriften används"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Länder"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Länder med flest åtkomster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Unika åtkomster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Åtkomster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Senaste {$days} dagarna"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Sedan {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Kartan är tom eftersom den geografiska användningsstatistiken är avstängd. En webbplatsadministratör kan slå på den under {$path} (landsnivå räcker). Endast tidskriftens förvaltare ser detta meddelande."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Kartan visas när användningsstatistiken har bearbetats med geografiska uppgifter, oftast dagen efter att den slogs på. Endast tidskriftens förvaltare ser detta meddelande."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Det finns inga åtkomster med känt land under den period som angetts för kartan. Endast tidskriftens förvaltare ser detta meddelande."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Åtkomstkarta: summera den geografiska användningsstatistiken"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Kartan visar de länder som åtkomsterna kommer från, enligt användningsstatistiken i OJS. Den uppdateras varje timme från redan bearbetad statistik, som sträcker sig till och med i går."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Period"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Antal dagar"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Kartan omfattar så här många dagar, till och med i går. Ange 0 för att visa allt sedan startdatumet."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Ange ett heltal dagar från 0 till 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Startdatum"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Valfritt. Åtkomster före denna dag räknas aldrig, oavsett antal dagar; till exempel för att bara räkna från en nystart av tidskriften."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Ange ett giltigt datum som inte ligger i framtiden."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Vad som räknas"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unika åtkomster räknar samma läsare en gång per artikel och dag och påverkas mindre av automatiserad trafik."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Välj vad som ska räknas."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Länder som utesluts"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Valfritt. Landskoder med två bokstäver (ISO 3166-1), avgränsade med kommatecken, till exempel \"SG, IE\". Användbart för länder vars åtkomster mest kommer från datacenter."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Använd landskoder med två bokstäver (ISO 3166-1), avgränsade med kommatecken."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Visning"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Blockets titel"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Visa antalet åtkomster och länder"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Länder som listas under kartan"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Från 0 (ingen lista) till 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Ange ett heltal från 0 till 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Färg på länder utan åtkomster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Färg på länder med flest åtkomster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Välj en färg."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

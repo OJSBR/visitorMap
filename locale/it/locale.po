@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: it\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mappa degli Accessi"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blocco della barra laterale con un planisfero della provenienza degli accessi alla rivista, negli ultimi giorni o da una data. Usa le statistiche geografiche di utilizzo che OJS conserva già: nulla viene inviato ad altri servizi."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mappa degli accessi"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Planisfero che evidenzia i paesi da cui provengono gli accessi alla rivista"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Paesi"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Paesi con più accessi"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Accessi unici"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Accessi"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Ultimi {$days} giorni"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Dal {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "La mappa è vuota perché le statistiche geografiche di utilizzo sono disattivate. Un amministratore del sito può attivarle in {$path} (basta il livello del paese). Solo i gestori della rivista vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "La mappa comparirà quando le statistiche di utilizzo saranno elaborate con dati geografici, di solito il giorno dopo la loro attivazione. Solo i gestori della rivista vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Non ci sono accessi con paese noto nel periodo definito per la mappa. Solo i gestori della rivista vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mappa degli accessi: sommare le statistiche geografiche di utilizzo"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "La mappa mostra i paesi da cui provengono gli accessi, secondo le statistiche di utilizzo di OJS. Si aggiorna ogni ora, a partire dalle statistiche già elaborate, che arrivano fino a ieri."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Periodo"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Numero di giorni"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "La mappa copre questo numero di giorni, fino a ieri. Usare 0 per mostrare tutto dalla data di inizio."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Inserire un numero intero di giorni, da 0 a 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Data di inizio"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Facoltativo. Gli accessi precedenti a questo giorno non vengono mai contati, qualunque sia il numero di giorni; ad esempio, per contare solo da un rilancio della rivista."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Inserire una data valida che non sia nel futuro."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Cosa contare"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Gli accessi unici contano lo stesso lettore una volta per articolo e per giorno, e risentono meno del traffico automatizzato."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Scegliere cosa contare."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Paesi da escludere"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Facoltativo. Codici di paese di due lettere (ISO 3166-1), separati da virgole, ad esempio \"SG, IE\". Utile per i paesi i cui accessi provengono soprattutto da data center."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Usare codici di paese di due lettere (ISO 3166-1) separati da virgole."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Visualizzazione"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Titolo del blocco"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Mostrare il numero di accessi e di paesi"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Paesi elencati sotto la mappa"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Da 0 (nessun elenco) a 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Inserire un numero intero da 0 a 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Colore dei paesi senza accessi"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Colore dei paesi con più accessi"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Scegliere un colore."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: en\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Visitor Map"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "A sidebar block with a world map of where the accesses to the journal come from, over the last days or since a date. It uses the geographic usage statistics OJS already keeps: nothing is sent to other services."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Access Map"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "World map shading the countries the accesses to the journal come from"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Countries"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Countries with the most accesses"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Unique accesses"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Accesses"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Last {$days} days"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Since {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "The map is empty because geographic usage statistics are turned off. A site administrator can turn them on in {$path} (the country level is enough). Only journal managers see this message."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "The map will appear once the usage statistics have been processed with geographic data, usually the day after they are turned on. Only journal managers see this message."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "There are no accesses with a known country in the period set for the map. Only journal managers see this message."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Visitor map: sum the geographic usage statistics"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "The map shows the countries the accesses come from, according to the usage statistics of OJS. It is updated every hour, from the statistics already processed, which run up to yesterday."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Period"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Number of days"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "The map covers this many days, up to yesterday. Use 0 to show everything since the start date."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Enter a whole number of days from 0 to 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Start date"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Optional. Accesses before this day are never counted, whatever the number of days, for example to count only from a relaunch of the journal."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Enter a valid date that is not in the future."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "What to count"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unique accesses count the same reader once per article and day, and are less affected by automated traffic."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Choose what to count."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Countries to leave out"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Optional. Two-letter country codes (ISO 3166-1), separated by commas, for example \"SG, IE\". Useful for countries whose accesses are mostly data centres."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Use two-letter country codes (ISO 3166-1) separated by commas."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Display"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Block title"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Show the number of accesses and countries"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Countries listed below the map"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "From 0 (no list) to 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Enter a whole number from 0 to 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Colour of countries without accesses"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Colour of the countries with the most accesses"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Choose a colour."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fi\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Käyttökartta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Sivupalkin lohko, joka näyttää maailmankartalla, mistä lehden käytöt tulevat viime päivinä tai tietystä päivästä alkaen. Se käyttää OJS:n jo tallentamia maantieteellisiä käyttötilastoja: mitään ei lähetetä muihin palveluihin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Käyttökartta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Maailmankartta, joka korostaa maita, joista lehteä käytetään"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Maat"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Eniten käyttöjä sisältävät maat"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Yksilölliset käytöt"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Käytöt"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Viimeiset {$days} päivää"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date} alkaen"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Kartta on tyhjä, koska maantieteelliset käyttötilastot on poistettu käytöstä. Sivuston ylläpitäjä voi ottaa ne käyttöön kohdassa {$path} (maataso riittää). Vain lehden hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Kartta tulee näkyviin, kun käyttötilastot on käsitelty maantieteellisine tietoineen, yleensä käyttöönottoa seuraavana päivänä. Vain lehden hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Kartalle määritetyllä jaksolla ei ole käyttöjä, joiden maa tunnetaan. Vain lehden hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Käyttökartta: maantieteellisten käyttötilastojen yhteenveto"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Kartta näyttää maat, joista käytöt tulevat, OJS:n käyttötilastojen mukaan. Se päivittyy tunneittain jo käsitellyistä tilastoista, jotka ulottuvat eiliseen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Jakso"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Päivien määrä"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Kartta kattaa näin monta päivää eiliseen asti. Käytä arvoa 0 näyttääksesi kaiken aloituspäivästä alkaen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Anna kokonaisluku päiviä väliltä 0–3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Aloituspäivä"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Valinnainen. Tätä päivää aiempia käyttöjä ei koskaan lasketa päivien määrästä riippumatta; esimerkiksi laskeaksesi vain lehden uudelleenjulkaisusta alkaen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Anna kelvollinen päivämäärä, joka ei ole tulevaisuudessa."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Mitä lasketaan"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Yksilölliset käytöt laskevat saman lukijan kerran artikkelia ja päivää kohden, ja automaattinen liikenne vaikuttaa niihin vähemmän."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Valitse, mitä lasketaan."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Pois jätettävät maat"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Valinnainen. Kaksikirjaimiset maakoodit (ISO 3166-1) pilkuilla erotettuina, esimerkiksi \"SG, IE\". Hyödyllinen maille, joiden käytöt tulevat enimmäkseen datakeskuksista."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Käytä kaksikirjaimisia maakoodeja (ISO 3166-1) pilkuilla erotettuina."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Näyttö"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Lohkon otsikko"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Näytä käyttöjen ja maiden määrä"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Kartan alla luetellut maat"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0:sta (ei luetteloa) 20:een."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Anna kokonaisluku väliltä 0–20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Käytöttömien maiden väri"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Eniten käyttöjä sisältävien maiden väri"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Valitse väri."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

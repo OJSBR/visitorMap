@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hy\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Մուտքերի քարտեզ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Կողագոտու բլոկ՝ աշխարհի քարտեզով, որը ցույց է տալիս, թե որտեղից են գալիս ամսագրի մուտքերը վերջին օրերին կամ որոշակի ամսաթվից ի վեր։ Օգտագործում է օգտագործման աշխարհագրական վիճակագրությունը, որը OJS-ն արդեն պահում է․ ոչինչ չի ուղարկվում այլ ծառայությունների։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Մուտքերի քարտեզ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Աշխարհի քարտեզ, որն ընդգծում է այն երկրները, որտեղից մուտք են գործում ամսագիր"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Երկրներ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Ամենաշատ մուտքերով երկրներ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Եզակի մուտքեր"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Մուտքեր"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Վերջին {$days} օրը"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date}-ից ի վեր"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Քարտեզը դատարկ է, քանի որ օգտագործման աշխարհագրական վիճակագրությունն անջատված է։ Կայքի ադմինիստրատորը կարող է այն միացնել {$path} բաժնում (երկրի մակարդակը բավարար է)։ Այս հաղորդագրությունը տեսնում են միայն ամսագրի կառավարիչները։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Քարտեզը կհայտնվի, երբ օգտագործման վիճակագրությունը մշակվի աշխարհագրական տվյալներով, սովորաբար միացնելուց հաջորդ օրը։ Այս հաղորդագրությունը տեսնում են միայն ամսագրի կառավարիչները։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Քարտեզի համար սահմանված ժամանակահատվածում հայտնի երկրից մուտքեր չկան։ Այս հաղորդագրությունը տեսնում են միայն ամսագրի կառավարիչները։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Մուտքերի քարտեզ․ օգտագործման աշխարհագրական վիճակագրության ամփոփում"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Քարտեզը ցույց է տալիս երկրները, որտեղից գալիս են մուտքերը՝ ըստ OJS-ի օգտագործման վիճակագրության։ Թարմացվում է ամեն ժամ՝ արդեն մշակված վիճակագրությունից, որը հասնում է մինչև երեկ։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Ժամանակահատված"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Օրերի քանակ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Քարտեզն ընդգրկում է այսքան օր՝ մինչև երեկ։ Մուտքագրեք 0՝ սկզբնական ամսաթվից ի վեր ամեն ինչ ցույց տալու համար։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Մուտքագրեք օրերի ամբողջ թիվ՝ 0-ից 3650։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Սկզբնական ամսաթիվ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Ըստ ցանկության։ Այս օրվանից առաջ մուտքերը երբեք չեն հաշվվում՝ անկախ օրերի քանակից, օրինակ՝ ամսագրի վերագործարկումից հետո միայն հաշվելու համար։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Մուտքագրեք վավեր ամսաթիվ, որը ապագայում չէ։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Ինչ հաշվել"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Եզակի մուտքերը նույն ընթերցողին հաշվում են մեկ անգամ յուրաքանչյուր հոդվածի և օրվա համար և ավելի քիչ են ազդվում ավտոմատացված երթևեկից։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Ընտրեք՝ ինչ հաշվել։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Բացառվող երկրներ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Ըստ ցանկության։ Երկտառ երկրների կոդեր (ISO 3166-1)՝ ստորակետով բաժանված, օրինակ՝ «SG, IE»։ Օգտակար է այն երկրների համար, որոնց մուտքերը հիմնականում տվյալների կենտրոններից են։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Օգտագործեք ստորակետով բաժանված երկտառ երկրների կոդեր (ISO 3166-1)։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Ցուցադրում"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Բլոկի վերնագիր"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Ցույց տալ մուտքերի և երկրների քանակը"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Քարտեզի տակ թվարկված երկրներ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0-ից (առանց ցանկի) մինչև 20։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Մուտքագրեք ամբողջ թիվ՝ 0-ից 20։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Առանց մուտքերի երկրների գույնը"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Ամենաշատ մուտքերով երկրների գույնը"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Ընտրեք գույն։"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Կոսովո"

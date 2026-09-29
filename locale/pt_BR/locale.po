@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pt_BR\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mapa de Acessos"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloco da barra lateral com um mapa-múndi da origem dos acessos à revista, nos últimos dias ou desde uma data. Usa as estatísticas geográficas de acesso que o OJS já guarda: nada é enviado a outros serviços."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mapa de acessos"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa-múndi destacando os países de onde vêm os acessos à revista"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Países"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Países com mais acessos"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Acessos únicos"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Acessos"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Últimos {$days} dias"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Desde {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "O mapa está vazio porque as estatísticas geográficas de acesso estão desligadas. Um administrador do site pode ligá-las em {$path} (o nível de país basta). Só os gerentes da revista veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "O mapa aparece quando as estatísticas de acesso forem processadas com dados geográficos, normalmente no dia seguinte ao que forem ligadas. Só os gerentes da revista veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Não há acessos com país conhecido no período definido para o mapa. Só os gerentes da revista veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mapa de acessos: somar as estatísticas geográficas de acesso"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "O mapa mostra os países de onde vêm os acessos, segundo as estatísticas de acesso do OJS. Ele é atualizado a cada hora, a partir das estatísticas já processadas, que vão até ontem."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Período"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Número de dias"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "O mapa cobre essa quantidade de dias, até ontem. Use 0 para mostrar tudo desde a data inicial."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Informe um número inteiro de dias, de 0 a 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Data inicial"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opcional. Acessos anteriores a este dia nunca entram na conta, qualquer que seja o número de dias; por exemplo, para contar só a partir de um relançamento da revista."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Informe uma data válida que não esteja no futuro."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "O que contar"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Acessos únicos contam o mesmo leitor uma vez por artigo e por dia, e sofrem menos com tráfego automatizado."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Escolha o que contar."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Países a deixar de fora"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opcional. Códigos de país de duas letras (ISO 3166-1), separados por vírgula, por exemplo \"SG, IE\". Útil para países cujos acessos vêm sobretudo de data centers."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Use códigos de país de duas letras (ISO 3166-1) separados por vírgula."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Exibição"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Título do bloco"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Mostrar o número de acessos e de países"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Países listados abaixo do mapa"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "De 0 (sem lista) a 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Informe um número inteiro de 0 a 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Cor dos países sem acessos"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Cor dos países com mais acessos"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Escolha uma cor."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

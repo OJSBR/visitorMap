@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: vi\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Bản đồ truy cập"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Khối thanh bên với bản đồ thế giới cho thấy nguồn gốc các lượt truy cập tạp chí trong những ngày gần đây hoặc từ một ngày nhất định. Khối dùng thống kê sử dụng theo địa lý mà OJS đã lưu: không có gì được gửi đến dịch vụ khác."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Bản đồ truy cập"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Bản đồ thế giới làm nổi bật các quốc gia truy cập tạp chí"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Quốc gia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Quốc gia có nhiều lượt truy cập nhất"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Lượt truy cập duy nhất"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Lượt truy cập"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "{$days} ngày qua"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Từ {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Bản đồ trống vì thống kê sử dụng theo địa lý đang tắt. Quản trị viên trang có thể bật tại {$path} (cấp quốc gia là đủ). Chỉ người quản lý tạp chí thấy thông báo này."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Bản đồ sẽ xuất hiện khi thống kê sử dụng được xử lý cùng dữ liệu địa lý, thường là ngày sau khi bật. Chỉ người quản lý tạp chí thấy thông báo này."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Không có lượt truy cập nào từ quốc gia đã biết trong khoảng thời gian đặt cho bản đồ. Chỉ người quản lý tạp chí thấy thông báo này."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Bản đồ truy cập: tổng hợp thống kê sử dụng theo địa lý"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Bản đồ hiển thị các quốc gia có lượt truy cập, theo thống kê sử dụng của OJS. Được cập nhật mỗi giờ từ thống kê đã xử lý, tính đến hôm qua."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Khoảng thời gian"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Số ngày"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Bản đồ bao gồm số ngày này, tính đến hôm qua. Dùng 0 để hiển thị mọi thứ từ ngày bắt đầu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Nhập số ngày là số nguyên từ 0 đến 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Ngày bắt đầu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Không bắt buộc. Lượt truy cập trước ngày này không bao giờ được tính, bất kể số ngày; ví dụ để chỉ tính từ lần khởi động lại tạp chí."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Nhập một ngày hợp lệ không nằm trong tương lai."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Tính gì"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Lượt truy cập duy nhất tính cùng một độc giả một lần cho mỗi bài và mỗi ngày, và ít bị ảnh hưởng bởi lưu lượng tự động."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Chọn nội dung cần tính."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Quốc gia loại trừ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Không bắt buộc. Mã quốc gia hai chữ cái (ISO 3166-1), cách nhau bằng dấu phẩy, ví dụ \"SG, IE\". Hữu ích với các quốc gia có lượt truy cập chủ yếu từ trung tâm dữ liệu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Dùng mã quốc gia hai chữ cái (ISO 3166-1), cách nhau bằng dấu phẩy."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Hiển thị"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Tiêu đề khối"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Hiển thị số lượt truy cập và quốc gia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Quốc gia được liệt kê dưới bản đồ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Từ 0 (không có danh sách) đến 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Nhập một số nguyên từ 0 đến 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Màu của quốc gia không có truy cập"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Màu của quốc gia có nhiều truy cập nhất"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Chọn một màu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

@@ -1,0 +1,106 @@
+/**
+ * @file plugins/blocks/visitorMap/css/visitorMap.css
+ *
+ * Copyright (c) 2026 OJSBR (https://ojsbr.com)
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * The visitor map block. Colours of text and lines come from the theme; only
+ * the map's own colours are the plugin's.
+ */
+
+.block_visitor_map .visitor_map {
+	margin: 0;
+}
+
+.block_visitor_map .visitor_map__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.block_visitor_map .visitor_map__legend {
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+	margin-top: 0.4em;
+	font-size: 0.75em;
+	opacity: 0.8;
+}
+
+.block_visitor_map .visitor_map__legendScale {
+	display: flex;
+	flex: 1;
+	height: 0.55em;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.block_visitor_map .visitor_map__legendScale span {
+	flex: 1;
+}
+
+.block_visitor_map .visitor_map__summary {
+	display: flex;
+	gap: 1.5em;
+	margin: 0.9em 0 0;
+}
+
+.block_visitor_map .visitor_map__summary div {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.block_visitor_map .visitor_map__summary dt {
+	font-size: 0.8em;
+	font-weight: normal;
+	opacity: 0.8;
+}
+
+.block_visitor_map .visitor_map__summary dd {
+	margin: 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1.2;
+	font-variant-numeric: tabular-nums;
+}
+
+.block_visitor_map .visitor_map__period {
+	margin: 0.3em 0 0;
+	font-size: 0.8em;
+	opacity: 0.8;
+}
+
+.block_visitor_map .visitor_map__top {
+	list-style: none;
+	margin: 0.9em 0 0;
+	padding: 0;
+	font-size: 0.875em;
+}
+
+.block_visitor_map .visitor_map__top li {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.15em 0.5em;
+	margin: 0 0 0.5em;
+	padding: 0;
+	border: 0;
+}
+
+.block_visitor_map .visitor_map__value {
+	font-variant-numeric: tabular-nums;
+}
+
+.block_visitor_map .visitor_map__bar {
+	grid-column: 1 / -1;
+	height: 3px;
+	background: rgba(127, 127, 127, 0.18);
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.block_visitor_map .visitor_map__bar span {
+	display: block;
+	height: 100%;
+	background: currentColor;
+	opacity: 0.55;
+}

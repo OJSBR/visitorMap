@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sr_Latn\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mapa pristupa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok za bočnu traku sa mapom sveta koja pokazuje odakle dolaze pristupi časopisu u poslednjim danima ili od određenog datuma. Koristi geografsku statistiku korišćenja koju OJS već čuva: ništa se ne šalje drugim servisima."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mapa pristupa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa sveta koja ističe zemlje iz kojih se pristupa časopisu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Zemlje"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Zemlje sa najviše pristupa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Jedinstveni pristupi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Pristupi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Poslednjih {$days} dana"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Od {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa je prazna jer je geografska statistika korišćenja isključena. Administrator sajta može da je uključi u {$path} (nivo zemlje je dovoljan). Ovu poruku vide samo menadžeri časopisa."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa će se pojaviti kada statistika korišćenja bude obrađena sa geografskim podacima, obično dan nakon uključivanja. Ovu poruku vide samo menadžeri časopisa."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "U periodu podešenom za mapu nema pristupa sa poznatom zemljom. Ovu poruku vide samo menadžeri časopisa."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mapa pristupa: sabiranje geografske statistike korišćenja"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapa prikazuje zemlje iz kojih dolaze pristupi, prema statistici korišćenja OJS-a. Ažurira se svakog sata iz već obrađene statistike, koja seže do juče."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Period"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Broj dana"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Mapa obuhvata toliko dana, do juče. Unesite 0 da biste prikazali sve od početnog datuma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Unesite ceo broj dana od 0 do 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Početni datum"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opciono. Pristupi pre ovog dana se nikada ne broje, bez obzira na broj dana; na primer, za brojanje tek od ponovnog pokretanja časopisa."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Unesite važeći datum koji nije u budućnosti."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Šta se broji"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Jedinstveni pristupi broje istog čitaoca jednom po članku i danu i manje na njih utiče automatizovani saobraćaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Izaberite šta se broji."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Isključene zemlje"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opciono. Dvoslovne oznake zemalja (ISO 3166-1), odvojene zarezima, na primer „SG, IE”. Korisno za zemlje čiji pristupi uglavnom dolaze iz centara podataka."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Koristite dvoslovne oznake zemalja (ISO 3166-1), odvojene zarezima."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Prikaz"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Naslov bloka"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Prikaži broj pristupa i zemalja"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Zemlje navedene ispod mape"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Od 0 (bez liste) do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Unesite ceo broj od 0 do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Boja zemalja bez pristupa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Boja zemalja sa najviše pristupa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Izaberite boju."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ro\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Harta accesărilor"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc pentru bara laterală cu o hartă a lumii care arată de unde provin accesările revistei, în ultimele zile sau de la o dată. Folosește statisticile geografice de utilizare pe care OJS le păstrează deja: nimic nu este trimis către alte servicii."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Harta accesărilor"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Hartă a lumii care evidențiază țările din care este accesată revista"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Țări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Țările cu cele mai multe accesări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Accesări unice"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Accesări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Ultimele {$days} zile"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Din {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Harta este goală deoarece statisticile geografice de utilizare sunt dezactivate. Un administrator al site-ului le poate activa în {$path} (nivelul de țară este suficient). Doar managerii revistei văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Harta va apărea după ce statisticile de utilizare vor fi procesate cu date geografice, de obicei în ziua de după activare. Doar managerii revistei văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Nu există accesări cu țară cunoscută în perioada setată pentru hartă. Doar managerii revistei văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Harta accesărilor: însumarea statisticilor geografice de utilizare"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Harta arată țările din care provin accesările, conform statisticilor de utilizare OJS. Se actualizează în fiecare oră din statisticile deja procesate, care ajung până ieri."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Perioadă"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Număr de zile"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Harta acoperă atâtea zile, până ieri. Folosiți 0 pentru a afișa totul de la data de început."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Introduceți un număr întreg de zile între 0 și 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Data de început"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opțional. Accesările dinaintea acestei zile nu sunt numărate niciodată, oricare ar fi numărul de zile; de exemplu, pentru a număra doar de la o relansare a revistei."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Introduceți o dată validă care nu este în viitor."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Ce se numără"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Accesările unice numără același cititor o singură dată pe articol și pe zi și sunt mai puțin afectate de traficul automatizat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Alegeți ce se numără."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Țări excluse"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opțional. Coduri de țară din două litere (ISO 3166-1), separate prin virgule, de exemplu „SG, IE”. Util pentru țările ale căror accesări provin mai ales din centre de date."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Folosiți coduri de țară din două litere (ISO 3166-1), separate prin virgule."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Afișare"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Titlul blocului"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Afișează numărul de accesări și de țări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Țări listate sub hartă"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "De la 0 (fără listă) la 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Introduceți un număr întreg între 0 și 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Culoarea țărilor fără accesări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Culoarea țărilor cu cele mai multe accesări"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Alegeți o culoare."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

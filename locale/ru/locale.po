@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ru\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Карта обращений"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок боковой панели с картой мира, показывающей, откуда приходят обращения к журналу за последние дни или с определённой даты. Использует географическую статистику использования, которую OJS уже хранит: ничего не отправляется в другие сервисы."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Карта обращений"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Карта мира, выделяющая страны, из которых обращаются к журналу"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Страны"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Страны с наибольшим числом обращений"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Уникальные обращения"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Обращения"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Последние {$days} дн."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "С {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Карта пуста, потому что географическая статистика использования отключена. Администратор сайта может включить её в разделе {$path} (достаточно уровня страны). Это сообщение видят только менеджеры журнала."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Карта появится, когда статистика использования будет обработана с географическими данными, обычно на следующий день после включения. Это сообщение видят только менеджеры журнала."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "За период, заданный для карты, нет обращений из известных стран. Это сообщение видят только менеджеры журнала."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Карта обращений: суммирование географической статистики использования"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Карта показывает страны, из которых приходят обращения, по статистике использования OJS. Обновляется каждый час по уже обработанной статистике, которая доходит до вчерашнего дня."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Период"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Число дней"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Карта охватывает столько дней, до вчерашнего дня включительно. Укажите 0, чтобы показать всё с начальной даты."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Введите целое число дней от 0 до 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Начальная дата"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Необязательно. Обращения раньше этого дня никогда не учитываются, независимо от числа дней; например, чтобы считать только с перезапуска журнала."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Введите корректную дату, которая не находится в будущем."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Что считать"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Уникальные обращения учитывают одного и того же читателя один раз на статью в день и меньше зависят от автоматического трафика."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Выберите, что считать."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Исключаемые страны"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Необязательно. Двухбуквенные коды стран (ISO 3166-1) через запятую, например «SG, IE». Полезно для стран, обращения из которых идут в основном из центров обработки данных."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Используйте двухбуквенные коды стран (ISO 3166-1) через запятую."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Отображение"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Заголовок блока"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Показывать число обращений и стран"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Страны, перечисленные под картой"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "От 0 (без списка) до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Введите целое число от 0 до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Цвет стран без обращений"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Цвет стран с наибольшим числом обращений"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Выберите цвет."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Косово"

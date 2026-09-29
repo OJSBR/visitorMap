@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: el\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Χάρτης Προσβάσεων"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Μπλοκ πλευρικής στήλης με παγκόσμιο χάρτη της προέλευσης των προσβάσεων στο περιοδικό, για τις τελευταίες ημέρες ή από μια ημερομηνία. Χρησιμοποιεί τα γεωγραφικά στατιστικά χρήσης που ήδη κρατά το OJS: τίποτα δεν αποστέλλεται σε άλλες υπηρεσίες."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Χάρτης προσβάσεων"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Παγκόσμιος χάρτης που τονίζει τις χώρες από τις οποίες προέρχονται οι προσβάσεις στο περιοδικό"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Χώρες"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Χώρες με τις περισσότερες προσβάσεις"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Μοναδικές προσβάσεις"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Προσβάσεις"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Τελευταίες {$days} ημέρες"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Από {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Ο χάρτης είναι κενός επειδή τα γεωγραφικά στατιστικά χρήσης είναι απενεργοποιημένα. Ένας διαχειριστής του ιστότοπου μπορεί να τα ενεργοποιήσει στο {$path} (αρκεί το επίπεδο χώρας). Μόνο οι διαχειριστές του περιοδικού βλέπουν αυτό το μήνυμα."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Ο χάρτης θα εμφανιστεί όταν τα στατιστικά χρήσης υποστούν επεξεργασία με γεωγραφικά δεδομένα, συνήθως την επόμενη ημέρα από την ενεργοποίησή τους. Μόνο οι διαχειριστές του περιοδικού βλέπουν αυτό το μήνυμα."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Δεν υπάρχουν προσβάσεις με γνωστή χώρα στην περίοδο που ορίστηκε για τον χάρτη. Μόνο οι διαχειριστές του περιοδικού βλέπουν αυτό το μήνυμα."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Χάρτης προσβάσεων: άθροιση των γεωγραφικών στατιστικών χρήσης"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Ο χάρτης δείχνει τις χώρες από τις οποίες προέρχονται οι προσβάσεις, σύμφωνα με τα στατιστικά χρήσης του OJS. Ενημερώνεται κάθε ώρα από τα ήδη επεξεργασμένα στατιστικά, που φτάνουν μέχρι χθες."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Περίοδος"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Αριθμός ημερών"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Ο χάρτης καλύπτει αυτόν τον αριθμό ημερών, μέχρι χθες. Χρησιμοποιήστε 0 για να εμφανιστούν όλα από την ημερομηνία έναρξης."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Εισαγάγετε ακέραιο αριθμό ημερών από 0 έως 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Ημερομηνία έναρξης"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Προαιρετικό. Οι προσβάσεις πριν από αυτή την ημέρα δεν μετρώνται ποτέ, όποιος κι αν είναι ο αριθμός ημερών· για παράδειγμα, για να μετράτε μόνο από μια επανέκδοση του περιοδικού."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Εισαγάγετε έγκυρη ημερομηνία που δεν είναι στο μέλλον."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Τι μετράται"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Οι μοναδικές προσβάσεις μετρούν τον ίδιο αναγνώστη μία φορά ανά άρθρο και ημέρα και επηρεάζονται λιγότερο από την αυτοματοποιημένη κίνηση."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Επιλέξτε τι μετράται."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Χώρες προς εξαίρεση"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Προαιρετικό. Κωδικοί χωρών δύο γραμμάτων (ISO 3166-1), χωρισμένοι με κόμματα, π.χ. «SG, IE». Χρήσιμο για χώρες των οποίων οι προσβάσεις προέρχονται κυρίως από κέντρα δεδομένων."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Χρησιμοποιήστε κωδικούς χωρών δύο γραμμάτων (ISO 3166-1), χωρισμένους με κόμματα."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Εμφάνιση"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Τίτλος του μπλοκ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Εμφάνιση του αριθμού προσβάσεων και χωρών"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Χώρες που εμφανίζονται κάτω από τον χάρτη"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Από 0 (χωρίς λίστα) έως 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Εισαγάγετε ακέραιο αριθμό από 0 έως 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Χρώμα των χωρών χωρίς προσβάσεις"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Χρώμα των χωρών με τις περισσότερες προσβάσεις"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Επιλέξτε χρώμα."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Κοσσυφοπέδιο"

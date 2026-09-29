@@ -1,0 +1,8 @@
+.github export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+cypress export-ignore
+tests export-ignore
+tools export-ignore
+error_log export-ignore
+docs/*.png export-ignore

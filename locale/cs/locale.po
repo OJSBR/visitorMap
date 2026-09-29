@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: cs\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mapa přístupů"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok postranního panelu s mapou světa, odkud přicházejí přístupy k časopisu, za poslední dny nebo od určitého data. Využívá geografické statistiky využití, které OJS už uchovává: nic se neodesílá jiným službám."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mapa přístupů"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa světa zvýrazňující země, odkud přicházejí přístupy k časopisu"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Země"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Země s nejvíce přístupy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Unikátní přístupy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Přístupy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Posledních {$days} dní"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Od {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa je prázdná, protože geografické statistiky využití jsou vypnuté. Správce webu je může zapnout v {$path} (stačí úroveň země). Tuto zprávu vidí jen správci časopisu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa se zobrazí, jakmile budou statistiky využití zpracovány s geografickými údaji, obvykle den po jejich zapnutí. Tuto zprávu vidí jen správci časopisu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "V období nastaveném pro mapu nejsou žádné přístupy se známou zemí. Tuto zprávu vidí jen správci časopisu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mapa přístupů: sečtení geografických statistik využití"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapa ukazuje země, odkud přicházejí přístupy, podle statistik využití OJS. Aktualizuje se každou hodinu z již zpracovaných statistik, které sahají do včerejška."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Období"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Počet dní"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Mapa pokrývá tento počet dní až do včerejška. Zadejte 0 pro zobrazení všeho od počátečního data."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Zadejte celý počet dní od 0 do 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Počáteční datum"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Nepovinné. Přístupy před tímto dnem se nikdy nezapočítávají, bez ohledu na počet dní; například pro počítání až od znovuspuštění časopisu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Zadejte platné datum, které není v budoucnosti."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Co počítat"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unikátní přístupy počítají stejného čtenáře jednou za článek a den a méně je ovlivňuje automatizovaný provoz."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Vyberte, co počítat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Vynechané země"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Nepovinné. Dvoupísmenné kódy zemí (ISO 3166-1) oddělené čárkami, například „SG, IE“. Užitečné pro země, jejichž přístupy pocházejí hlavně z datových center."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Použijte dvoupísmenné kódy zemí (ISO 3166-1) oddělené čárkami."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Zobrazení"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Název bloku"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Zobrazit počet přístupů a zemí"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Země uvedené pod mapou"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Od 0 (bez seznamu) do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Zadejte celé číslo od 0 do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Barva zemí bez přístupů"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Barva zemí s nejvíce přístupy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Vyberte barvu."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

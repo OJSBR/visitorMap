@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: tr\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Erişim Haritası"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Dergiye yapılan erişimlerin nereden geldiğini son günlerde veya bir tarihten bu yana dünya haritasında gösteren kenar çubuğu bloğu. OJS'nin zaten sakladığı coğrafi kullanım istatistiklerini kullanır: başka hizmetlere hiçbir şey gönderilmez."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Erişim haritası"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Dergiye erişilen ülkeleri vurgulayan dünya haritası"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Ülkeler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "En çok erişim alan ülkeler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Tekil erişimler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Erişimler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Son {$days} gün"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date} tarihinden beri"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Coğrafi kullanım istatistikleri kapalı olduğu için harita boş. Bir site yöneticisi bunları {$path} bölümünden açabilir (ülke düzeyi yeterlidir). Bu mesajı yalnızca dergi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Harita, kullanım istatistikleri coğrafi verilerle işlendikten sonra, genellikle açıldıkları günün ertesi günü görünür. Bu mesajı yalnızca dergi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Harita için belirlenen dönemde ülkesi bilinen erişim yok. Bu mesajı yalnızca dergi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Erişim haritası: coğrafi kullanım istatistiklerini toplama"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Harita, OJS kullanım istatistiklerine göre erişimlerin geldiği ülkeleri gösterir. Dünün sonuna kadar işlenmiş istatistiklerden saatte bir güncellenir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Dönem"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Gün sayısı"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Harita dün dahil bu kadar günü kapsar. Başlangıç tarihinden bu yana her şeyi göstermek için 0 girin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "0 ile 3650 arasında tam sayı olarak gün sayısı girin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Başlangıç tarihi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "İsteğe bağlı. Bu günden önceki erişimler, gün sayısı ne olursa olsun asla sayılmaz; örneğin yalnızca derginin yeniden başlatılmasından itibaren saymak için."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Gelecekte olmayan geçerli bir tarih girin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Ne sayılsın"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Tekil erişimler aynı okuru makale ve gün başına bir kez sayar ve otomatik trafikten daha az etkilenir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Neyin sayılacağını seçin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Hariç tutulacak ülkeler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "İsteğe bağlı. Virgülle ayrılmış iki harfli ülke kodları (ISO 3166-1), örneğin \"SG, IE\". Erişimleri çoğunlukla veri merkezlerinden gelen ülkeler için yararlıdır."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Virgülle ayrılmış iki harfli ülke kodları (ISO 3166-1) kullanın."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Görünüm"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Blok başlığı"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Erişim ve ülke sayısını göster"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Haritanın altında listelenen ülkeler"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0'dan (liste yok) 20'ye kadar."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "0 ile 20 arasında bir tam sayı girin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Erişimi olmayan ülkelerin rengi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "En çok erişim alan ülkelerin rengi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Bir renk seçin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosova"

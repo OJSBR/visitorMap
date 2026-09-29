@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: mk\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Мапа на пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок за страничната лента со карта на светот за потеклото на пристапите до списанието, во последните денови или од одреден датум. Ја користи географската статистика за користење што OJS веќе ја чува: ништо не се испраќа до други услуги."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Мапа на пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Карта на светот што ги истакнува земјите од кои се пристапува до списанието"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Земји"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Земји со најмногу пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Уникатни пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Последните {$days} дена"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Од {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Мапата е празна бидејќи географската статистика за користење е исклучена. Администратор на страницата може да ја вклучи во {$path} (нивото на земја е доволно). Само менаџерите на списанието ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Мапата ќе се појави кога статистиката за користење ќе се обработи со географски податоци, обично ден по вклучувањето. Само менаџерите на списанието ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Нема пристапи со позната земја во периодот поставен за мапата. Само менаџерите на списанието ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Мапа на пристапи: сумирање на географската статистика за користење"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Мапата ги прикажува земјите од кои доаѓаат пристапите, според статистиката за користење на OJS. Се ажурира секој час од веќе обработената статистика, која трае до вчера."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Период"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Број на денови"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Мапата опфаќа толку денови, до вчера. Внесете 0 за да се прикаже сè од почетниот датум."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Внесете цел број денови од 0 до 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Почетен датум"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Опционално. Пристапите пред овој ден никогаш не се бројат, без оглед на бројот на денови; на пример, за броење само од повторното лансирање на списанието."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Внесете валиден датум што не е во иднината."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Што се брои"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Уникатните пристапи го бројат истиот читател еднаш по статија и по ден и помалку се под влијание на автоматизиран сообраќај."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Изберете што се брои."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Земји што се исклучуваат"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Опционално. Двобуквени кодови на земји (ISO 3166-1), одделени со запирки, на пример „SG, IE“. Корисно за земји чии пристапи главно доаѓаат од центри за податоци."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Користете двобуквени кодови на земји (ISO 3166-1), одделени со запирки."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Приказ"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Наслов на блокот"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Прикажи го бројот на пристапи и земји"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Земји наведени под мапата"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Од 0 (без список) до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Внесете цел број од 0 до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Боја на земјите без пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Боја на земјите со најмногу пристапи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Изберете боја."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Косово"

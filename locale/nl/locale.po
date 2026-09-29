@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nl\n"
+
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Toegangskaart"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok voor de zijbalk met een wereldkaart van de herkomst van de toegang tot het tijdschrift, over de laatste dagen of sinds een datum. Het gebruikt de geografische gebruiksstatistieken die OJS al bewaart: er wordt niets naar andere diensten verzonden."
+
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Toegangskaart"
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Wereldkaart die de landen markeert van waaruit het tijdschrift wordt geraadpleegd"
+
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Landen"
+
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Landen met de meeste toegang"
+
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Unieke toegang"
+
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Toegang"
+
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Laatste {$days} dagen"
+
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Sinds {$date}"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "De kaart is leeg omdat de geografische gebruiksstatistieken zijn uitgeschakeld. Een sitebeheerder kan ze inschakelen via {$path} (het landniveau volstaat). Alleen de beheerders van het tijdschrift zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "De kaart verschijnt zodra de gebruiksstatistieken met geografische gegevens zijn verwerkt, meestal de dag na het inschakelen. Alleen de beheerders van het tijdschrift zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Er is geen toegang met een bekend land in de periode die voor de kaart is ingesteld. Alleen de beheerders van het tijdschrift zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Toegangskaart: de geografische gebruiksstatistieken optellen"
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "De kaart toont de landen waar de toegang vandaan komt, volgens de gebruiksstatistieken van OJS. Ze wordt elk uur bijgewerkt, op basis van de al verwerkte statistieken, die tot gisteren lopen."
+
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Periode"
+
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Aantal dagen"
+
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "De kaart beslaat dit aantal dagen, tot gisteren. Gebruik 0 om alles sinds de startdatum te tonen."
+
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Voer een geheel aantal dagen in, van 0 tot 3650."
+
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Startdatum"
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Optioneel. Toegang vóór deze dag wordt nooit meegeteld, ongeacht het aantal dagen; bijvoorbeeld om pas te tellen vanaf een herstart van het tijdschrift."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Voer een geldige datum in die niet in de toekomst ligt."
+
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Wat er wordt geteld"
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unieke toegang telt dezelfde lezer één keer per artikel en per dag, en wordt minder beïnvloed door geautomatiseerd verkeer."
+
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Kies wat er wordt geteld."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Uit te sluiten landen"
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Optioneel. Landcodes van twee letters (ISO 3166-1), gescheiden door komma's, bijvoorbeeld \"SG, IE\". Handig voor landen waarvan de toegang vooral uit datacenters komt."
+
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Gebruik landcodes van twee letters (ISO 3166-1), gescheiden door komma's."
+
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Weergave"
+
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Titel van het blok"
+
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Het aantal toegangen en landen tonen"
+
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Landen onder de kaart"
+
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Van 0 (geen lijst) tot 20."
+
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Voer een geheel getal in van 0 tot 20."
+
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Kleur van landen zonder toegang"
+
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Kleur van landen met de meeste toegang"
+
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Kies een kleur."
+
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosovo"

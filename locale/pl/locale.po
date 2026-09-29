@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pl\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Mapa dostępów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok paska bocznego z mapą świata pokazującą, skąd pochodzą dostępy do czasopisma w ostatnich dniach lub od wybranej daty. Korzysta z geograficznych statystyk użycia, które OJS już przechowuje: nic nie jest wysyłane do innych usług."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Mapa dostępów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa świata wyróżniająca kraje, z których korzysta się z czasopisma"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Kraje"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Kraje z największą liczbą dostępów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Unikalne dostępy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Dostępy"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Ostatnie {$days} dni"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Od {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa jest pusta, ponieważ geograficzne statystyki użycia są wyłączone. Administrator witryny może je włączyć w {$path} (poziom kraju wystarczy). Ten komunikat widzą tylko menedżerowie czasopisma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa pojawi się, gdy statystyki użycia zostaną przetworzone z danymi geograficznymi, zwykle dzień po ich włączeniu. Ten komunikat widzą tylko menedżerowie czasopisma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "W okresie ustawionym dla mapy nie ma dostępów ze znanego kraju. Ten komunikat widzą tylko menedżerowie czasopisma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Mapa dostępów: sumowanie geograficznych statystyk użycia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapa pokazuje kraje, z których pochodzą dostępy, według statystyk użycia OJS. Jest aktualizowana co godzinę na podstawie już przetworzonych statystyk, sięgających do wczoraj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Okres"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Liczba dni"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Mapa obejmuje tyle dni, do wczoraj. Wpisz 0, aby pokazać wszystko od daty początkowej."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Wpisz całkowitą liczbę dni od 0 do 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Data początkowa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opcjonalnie. Dostępy sprzed tego dnia nigdy nie są liczone, niezależnie od liczby dni; na przykład, aby liczyć dopiero od ponownego uruchomienia czasopisma."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Wpisz prawidłową datę, która nie jest w przyszłości."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Co liczyć"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unikalne dostępy liczą tego samego czytelnika raz na artykuł i dzień, a ruch automatyczny ma na nie mniejszy wpływ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Wybierz, co liczyć."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Kraje do pominięcia"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Opcjonalnie. Dwuliterowe kody krajów (ISO 3166-1) oddzielone przecinkami, np. „SG, IE”. Przydatne dla krajów, których dostępy pochodzą głównie z centrów danych."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Użyj dwuliterowych kodów krajów (ISO 3166-1) oddzielonych przecinkami."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Wyświetlanie"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Tytuł bloku"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Pokaż liczbę dostępów i krajów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Kraje wymienione pod mapą"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Od 0 (bez listy) do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Wpisz liczbę całkowitą od 0 do 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Kolor krajów bez dostępów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Kolor krajów z największą liczbą dostępów"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Wybierz kolor."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Kosowo"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: bg\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Карта на достъпите"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок за страничната лента със световна карта на произхода на достъпите до списанието за последните дни или от определена дата. Използва географската статистика за използване, която OJS вече пази: нищо не се изпраща към други услуги."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Карта на достъпите"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Световна карта, която откроява страните, от които се осъществява достъп до списанието"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Държави"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Държави с най-много достъпи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Уникални достъпи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Достъпи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Последните {$days} дни"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "От {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Картата е празна, защото географската статистика за използване е изключена. Администратор на сайта може да я включи от {$path} (нивото на държава е достатъчно). Само мениджърите на списанието виждат това съобщение."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Картата ще се появи, след като статистиката за използване бъде обработена с географски данни, обикновено на следващия ден след включването ѝ. Само мениджърите на списанието виждат това съобщение."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Няма достъпи с известна държава в периода, зададен за картата. Само мениджърите на списанието виждат това съобщение."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Карта на достъпите: сумиране на географската статистика за използване"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Картата показва държавите, от които идват достъпите, според статистиката за използване на OJS. Обновява се всеки час от вече обработената статистика, която стига до вчера."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Период"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Брой дни"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Картата обхваща толкова дни, до вчера. Въведете 0, за да се покаже всичко от началната дата."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Въведете цял брой дни от 0 до 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Начална дата"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "По избор. Достъпите преди този ден никога не се броят, независимо от броя дни; например за броене само от повторното стартиране на списанието."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Въведете валидна дата, която не е в бъдещето."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Какво да се брои"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Уникалните достъпи броят един и същ читател веднъж на статия и на ден и се влияят по-малко от автоматизиран трафик."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Изберете какво да се брои."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Изключени държави"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "По избор. Двубуквени кодове на държави (ISO 3166-1), разделени със запетаи, например „SG, IE“. Полезно за държави, чиито достъпи идват главно от центрове за данни."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Използвайте двубуквени кодове на държави (ISO 3166-1), разделени със запетаи."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Показване"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Заглавие на блока"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Показване на броя достъпи и държави"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Държави, изброени под картата"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "От 0 (без списък) до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Въведете цяло число от 0 до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Цвят на държавите без достъпи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Цвят на държавите с най-много достъпи"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Изберете цвят."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Косово"

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fa\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "نقشهٔ دسترسی"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "بلوک نوار کناری با نقشهٔ جهان از خاستگاه دسترسی‌ها به نشریه، در روزهای اخیر یا از یک تاریخ. از آمار جغرافیایی استفاده که OJS از پیش نگه می‌دارد استفاده می‌کند: هیچ چیز به سرویس‌های دیگر فرستاده نمی‌شود."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "نقشهٔ دسترسی"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "نقشهٔ جهان که کشورهای منشأ دسترسی به نشریه را برجسته می‌کند"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "کشورها"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "کشورهای دارای بیشترین دسترسی"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "دسترسی‌های یکتا"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "دسترسی‌ها"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "{$days} روز گذشته"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "از {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "نقشه خالی است زیرا آمار جغرافیایی استفاده غیرفعال است. مدیر سایت می‌تواند آن را در {$path} فعال کند (سطح کشور کافی است). فقط مدیران نشریه این پیام را می‌بینند."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "نقشه پس از پردازش آمار استفاده با داده‌های جغرافیایی، معمولاً روز پس از فعال‌سازی، نمایش داده می‌شود. فقط مدیران نشریه این پیام را می‌بینند."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "در بازهٔ تعیین‌شده برای نقشه هیچ دسترسی با کشور شناخته‌شده وجود ندارد. فقط مدیران نشریه این پیام را می‌بینند."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "نقشهٔ دسترسی: جمع‌بندی آمار جغرافیایی استفاده"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "نقشه کشورهایی را نشان می‌دهد که دسترسی‌ها از آن‌ها می‌آیند، بر اساس آمار استفادهٔ OJS. هر ساعت از آمار پردازش‌شده که تا دیروز است به‌روز می‌شود."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "بازه"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "تعداد روزها"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "نقشه این تعداد روز را تا دیروز در بر می‌گیرد. برای نمایش همه چیز از تاریخ شروع، 0 وارد کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "یک عدد صحیح روز بین 0 تا 3650 وارد کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "تاریخ شروع"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "اختیاری. دسترسی‌های پیش از این روز هرگز شمرده نمی‌شوند، هر تعداد روز که باشد؛ مثلاً برای شمارش فقط از زمان راه‌اندازی دوبارهٔ نشریه."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "یک تاریخ معتبر که در آینده نباشد وارد کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "چه چیزی شمرده شود"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "دسترسی‌های یکتا هر خواننده را برای هر مقاله و هر روز یک بار می‌شمارند و کمتر از ترافیک خودکار تأثیر می‌پذیرند."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "انتخاب کنید چه چیزی شمرده شود."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "کشورهای مستثنا"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "اختیاری. کدهای دوحرفی کشور (ISO 3166-1) که با ویرگول جدا شده‌اند، مثلاً \"SG, IE\". برای کشورهایی که بیشتر دسترسی‌شان از مراکز داده است مفید است."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "از کدهای دوحرفی کشور (ISO 3166-1) جداشده با ویرگول استفاده کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "نمایش"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "عنوان بلوک"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "نمایش تعداد دسترسی‌ها و کشورها"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "کشورهای فهرست‌شده زیر نقشه"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "از 0 (بدون فهرست) تا 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "یک عدد صحیح بین 0 تا 20 وارد کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "رنگ کشورهای بدون دسترسی"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "رنگ کشورهای دارای بیشترین دسترسی"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "یک رنگ انتخاب کنید."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "کوزوو"

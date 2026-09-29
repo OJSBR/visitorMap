@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hu\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Hozzáférési térkép"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Oldalsáv-blokk, amely világtérképen mutatja, honnan érkeznek a folyóirat hozzáférései az elmúlt napokban vagy egy adott dátum óta. Az OJS által már tárolt földrajzi használati statisztikákat használja: semmi nem kerül más szolgáltatásokhoz."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Hozzáférési térkép"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Világtérkép, amely kiemeli azokat az országokat, ahonnan a folyóiratot elérik"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Országok"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "A legtöbb hozzáférésű országok"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Egyedi hozzáférések"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Hozzáférések"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Az elmúlt {$days} nap"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "{$date} óta"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "A térkép üres, mert a földrajzi használati statisztikák ki vannak kapcsolva. A webhely adminisztrátora bekapcsolhatja őket itt: {$path} (az ország szintje elég). Ezt az üzenetet csak a folyóirat kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "A térkép akkor jelenik meg, amikor a használati statisztikákat földrajzi adatokkal feldolgozták, általában a bekapcsolást követő napon. Ezt az üzenetet csak a folyóirat kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "A térképhez beállított időszakban nincs ismert országból származó hozzáférés. Ezt az üzenetet csak a folyóirat kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Hozzáférési térkép: a földrajzi használati statisztikák összesítése"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "A térkép azokat az országokat mutatja, ahonnan a hozzáférések érkeznek, az OJS használati statisztikái szerint. Óránként frissül a már feldolgozott, tegnapig tartó statisztikákból."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Időszak"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Napok száma"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "A térkép ennyi napot fed le tegnapig. A 0 érték a kezdő dátum óta mindent megjelenít."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Adjon meg egy egész számú napot 0 és 3650 között."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Kezdő dátum"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Nem kötelező. Az e nap előtti hozzáféréseket soha nem számolja, a napok számától függetlenül; például ha csak a folyóirat újraindítása óta szeretne számolni."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Adjon meg egy érvényes, nem jövőbeli dátumot."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Mit számoljon"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Az egyedi hozzáférések ugyanazt az olvasót cikkenként és naponként egyszer számolják, és kevésbé érinti őket az automatizált forgalom."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Válassza ki, mit számoljon."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Kihagyandó országok"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Nem kötelező. Kétbetűs országkódok (ISO 3166-1) vesszővel elválasztva, például „SG, IE”. Hasznos olyan országoknál, ahonnan a hozzáférések főként adatközpontokból érkeznek."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Használjon vesszővel elválasztott kétbetűs országkódokat (ISO 3166-1)."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Megjelenítés"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "A blokk címe"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "A hozzáférések és az országok számának megjelenítése"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "A térkép alatt felsorolt országok"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "0-tól (nincs lista) 20-ig."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Adjon meg egy egész számot 0 és 20 között."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "A hozzáférés nélküli országok színe"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "A legtöbb hozzáférésű országok színe"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Válasszon színt."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Koszovó"

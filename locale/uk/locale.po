@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: uk\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.displayName"
+msgstr "Карта звернень"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок бічної панелі з мапою світу, що показує, звідки надходять звернення до журналу за останні дні або від певної дати. Використовує географічну статистику використання, яку OJS уже зберігає: нічого не надсилається іншим сервісам."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.defaultTitle"
+msgstr "Карта звернень"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Мапа світу, що виділяє країни, з яких звертаються до журналу"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.countries"
+msgstr "Країни"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.topCountries"
+msgstr "Країни з найбільшою кількістю звернень"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.unique"
+msgstr "Унікальні звернення"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.metric.total"
+msgstr "Звернення"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.lastDays"
+msgstr "Останні {$days} дн."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.since"
+msgstr "Від {$date}"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Мапа порожня, бо географічну статистику використання вимкнено. Адміністратор сайту може ввімкнути її в розділі {$path} (достатньо рівня країни). Це повідомлення бачать лише менеджери журналу."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Мапа з’явиться, коли статистику використання буде оброблено з географічними даними, зазвичай наступного дня після ввімкнення. Це повідомлення бачать лише менеджери журналу."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "За період, заданий для мапи, немає звернень із відомих країн. Це повідомлення бачать лише менеджери журналу."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.task.name"
+msgstr "Карта звернень: підсумовування географічної статистики використання"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Мапа показує країни, з яких надходять звернення, за статистикою використання OJS. Оновлюється щогодини з уже обробленої статистики, що сягає вчорашнього дня."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.period"
+msgstr "Період"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days"
+msgstr "Кількість днів"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.description"
+msgstr "Мапа охоплює стільки днів, до вчорашнього включно. Вкажіть 0, щоб показати все від початкової дати."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.days.invalid"
+msgstr "Введіть цілу кількість днів від 0 до 3650."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate"
+msgstr "Початкова дата"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Необов’язково. Звернення до цього дня ніколи не враховуються, незалежно від кількості днів; наприклад, щоб рахувати лише від перезапуску журналу."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.invalid"
+msgstr "Введіть коректну дату, яка не є в майбутньому."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric"
+msgstr "Що рахувати"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Унікальні звернення враховують того самого читача один раз на статтю за день і менше залежать від автоматизованого трафіку."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.invalid"
+msgstr "Виберіть, що рахувати."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries"
+msgstr "Виключені країни"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.description"
+msgstr "Необов’язково. Дволітерні коди країн (ISO 3166-1) через кому, наприклад «SG, IE». Корисно для країн, звернення з яких надходять переважно з центрів обробки даних."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.excludedCountries.invalid"
+msgstr "Використовуйте дволітерні коди країн (ISO 3166-1) через кому."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.display"
+msgstr "Відображення"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.blockTitle"
+msgstr "Заголовок блоку"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.showSummary"
+msgstr "Показувати кількість звернень і країн"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount"
+msgstr "Країни, перелічені під мапою"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.description"
+msgstr "Від 0 (без списку) до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.topCount.invalid"
+msgstr "Введіть ціле число від 0 до 20."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorLand"
+msgstr "Колір країн без звернень"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.colorHighlight"
+msgstr "Колір країн з найбільшою кількістю звернень"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.color.invalid"
+msgstr "Виберіть колір."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.country.XK"
+msgstr "Косово"
