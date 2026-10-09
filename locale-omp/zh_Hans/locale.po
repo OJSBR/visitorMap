@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: zh_Hans\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "侧边栏区块，以世界地图显示近几天或自某日期以来出版社访问的来源。它使用 OMP 已保存的地理使用统计：不会向其他服务发送任何数据。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "突出显示出版社访问来源国家的世界地图"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "地图为空，因为地理使用统计已关闭。站点管理员可在 {$path} 中开启（国家级别即可）。只有出版社管理者能看到此消息。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "使用统计在带地理数据处理后地图就会出现，通常在开启后的第二天。只有出版社管理者能看到此消息。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "在为地图设定的期间内，没有来自已知国家的访问。只有出版社管理者能看到此消息。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "地图根据 OMP 的使用统计显示访问来源国家。每小时根据已处理的统计更新，数据截至昨天。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "可选。无论天数多少，此日之前的访问都不计入；例如只从出版社重新起步时开始计算。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "唯一访问对同一读者每本书每天只计一次，受自动流量的影响较小。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "移除伪装成浏览器的机器人访问（成群的 IP 地址、不存在的浏览器、自动化客户端）。不会更改 OMP 的官方统计。"

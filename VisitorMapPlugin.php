@@ -71,6 +71,31 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
     /** After this long without a run, a page view queues one. */
     public const STALE_AFTER = 6 * 60 * 60;
 
+    /**
+     * Priority of locale-omp over the plugin's own locale (registered at 0):
+     * above it, and below any override a press makes with Custom Locale.
+     */
+    public const OMP_LOCALE_PRIORITY = 1;
+
+    /**
+     * On OMP, the texts that name the journal, its articles and OJS come from
+     * locale-omp, which names the press, its books and OMP instead. Only the
+     * keys of this plugin are there, so nothing of the core changes.
+     *
+     * @param string $category
+     * @param string $path
+     * @param null|int $mainContextId
+     */
+    public function register($category, $path, $mainContextId = null)
+    {
+        $success = parent::register($category, $path, $mainContextId);
+        if ($success && Application::get()->getName() === 'omp') {
+            Locale::registerPath(Core::getBaseDir() . '/' . $this->getPluginPath() . '/locale-omp', self::OMP_LOCALE_PRIORITY);
+        }
+
+        return $success;
+    }
+
     public function getDisplayName(): string
     {
         return __('plugins.blocks.visitorMap.displayName');

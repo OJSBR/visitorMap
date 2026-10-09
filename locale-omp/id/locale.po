@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: id\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok bilah sisi dengan peta dunia asal akses ke penerbit, dalam beberapa hari terakhir atau sejak suatu tanggal. Menggunakan statistik penggunaan geografis yang sudah disimpan OMP: tidak ada yang dikirim ke layanan lain."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Peta dunia yang menyoroti negara-negara asal akses ke penerbit"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Peta kosong karena statistik penggunaan geografis dinonaktifkan. Administrator situs dapat mengaktifkannya di {$path} (tingkat negara sudah cukup). Hanya pengelola penerbit yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Peta akan muncul setelah statistik penggunaan diproses dengan data geografis, biasanya sehari setelah diaktifkan. Hanya pengelola penerbit yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Tidak ada akses dengan negara yang diketahui dalam periode yang ditetapkan untuk peta. Hanya pengelola penerbit yang melihat pesan ini."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Peta menampilkan negara-negara asal akses, menurut statistik penggunaan OMP. Diperbarui setiap jam dari statistik yang sudah diproses, yang mencakup hingga kemarin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opsional. Akses sebelum hari ini tidak pernah dihitung, berapa pun jumlah harinya; misalnya untuk menghitung hanya sejak peluncuran ulang penerbit."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Akses unik menghitung pembaca yang sama satu kali per buku dan per hari, serta lebih sedikit terpengaruh lalu lintas otomatis."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Menghapus akses dari robot yang menyamar sebagai peramban (kerumunan alamat IP, peramban yang tidak ada, klien otomatis). Tidak mengubah statistik resmi OMP."

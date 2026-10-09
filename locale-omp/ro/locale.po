@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ro\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc pentru bara laterală cu o hartă a lumii care arată de unde provin accesările editurii, în ultimele zile sau de la o dată. Folosește statisticile geografice de utilizare pe care OMP le păstrează deja: nimic nu este trimis către alte servicii."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Hartă a lumii care evidențiază țările din care este accesată editura"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Harta este goală deoarece statisticile geografice de utilizare sunt dezactivate. Un administrator al site-ului le poate activa în {$path} (nivelul de țară este suficient). Doar managerii editurii văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Harta va apărea după ce statisticile de utilizare vor fi procesate cu date geografice, de obicei în ziua de după activare. Doar managerii editurii văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Nu există accesări cu țară cunoscută în perioada setată pentru hartă. Doar managerii editurii văd acest mesaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Harta arată țările din care provin accesările, conform statisticilor de utilizare OMP. Se actualizează în fiecare oră din statisticile deja procesate, care ajung până ieri."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opțional. Accesările dinaintea acestei zile nu sunt numărate niciodată, oricare ar fi numărul de zile; de exemplu, pentru a număra doar de la o relansare a editurii."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Accesările unice numără același cititor o singură dată pe carte și pe zi și sunt mai puțin afectate de traficul automatizat."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Elimină accesările roboților care se dau drept browsere (roiuri de adrese IP, browsere inexistente, clienți automați). Nu modifică statisticile oficiale OMP."

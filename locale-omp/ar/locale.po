@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ar\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "كتلة للشريط الجانبي تعرض خريطة للعالم بمصدر الوصول إلى دار النشر، خلال الأيام الأخيرة أو منذ تاريخ محدد. تستخدم إحصاءات الاستخدام الجغرافية التي يحفظها OMP أصلًا: لا يُرسَل أي شيء إلى خدمات أخرى."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "خريطة للعالم تبرز البلدان التي يأتي منها الوصول إلى دار النشر"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "الخريطة فارغة لأن إحصاءات الاستخدام الجغرافية معطّلة. يمكن لمدير الموقع تفعيلها من {$path} (يكفي مستوى البلد). لا يرى هذه الرسالة إلا مديرو دار النشر."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "ستظهر الخريطة عندما تُعالَج إحصاءات الاستخدام مع البيانات الجغرافية، عادةً في اليوم التالي لتفعيلها. لا يرى هذه الرسالة إلا مديرو دار النشر."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "لا توجد مرات وصول من بلد معروف في الفترة المحددة للخريطة. لا يرى هذه الرسالة إلا مديرو دار النشر."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "تعرض الخريطة البلدان التي يأتي منها الوصول، وفق إحصاءات الاستخدام في OMP. تُحدَّث كل ساعة من الإحصاءات المعالجة، التي تمتد حتى الأمس."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "اختياري. لا يُحتسب أي وصول قبل هذا اليوم مهما كان عدد الأيام، مثلًا للعدّ بدءًا من إعادة إطلاق دار النشر."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "تحتسب مرات الوصول الفريدة القارئ نفسه مرة واحدة لكل كتاب وكل يوم، وتتأثر أقل بالحركة الآلية."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "يزيل مرات الوصول من الروبوتات التي تتنكر في صورة متصفحات (أسراب من عناوين IP، ومتصفحات غير موجودة، وعملاء آليون). لا يغيّر الإحصاءات الرسمية في OMP."

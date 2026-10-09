@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ka\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "გვერდითი ზოლის ბლოკი მსოფლიო რუკით, რომელიც აჩვენებს, საიდან მოდის გამომცემლობაზე წვდომები ბოლო დღეებში ან გარკვეული თარიღიდან. იყენებს გამოყენების გეოგრაფიულ სტატისტიკას, რომელსაც OMP უკვე ინახავს: არაფერი იგზავნება სხვა სერვისებში."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "მსოფლიო რუკა, რომელიც გამოყოფს ქვეყნებს, საიდანაც გამომცემლობაზე წვდომა ხდება"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "რუკა ცარიელია, რადგან გამოყენების გეოგრაფიული სტატისტიკა გამორთულია. საიტის ადმინისტრატორს შეუძლია ჩართოს ის აქ: {$path} (ქვეყნის დონე საკმარისია). ამ შეტყობინებას მხოლოდ გამომცემლობის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "რუკა გამოჩნდება, როცა გამოყენების სტატისტიკა დამუშავდება გეოგრაფიული მონაცემებით, ჩვეულებრივ ჩართვიდან მეორე დღეს. ამ შეტყობინებას მხოლოდ გამომცემლობის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "რუკისთვის მითითებულ პერიოდში ცნობილი ქვეყნიდან წვდომა არ არის. ამ შეტყობინებას მხოლოდ გამომცემლობის მენეჯერები ხედავენ."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "რუკა აჩვენებს ქვეყნებს, საიდანაც მოდის წვდომები, OMP-ის გამოყენების სტატისტიკის მიხედვით. ახლდება ყოველ საათში უკვე დამუშავებული სტატისტიკიდან, რომელიც გუშინდლამდე აღწევს."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "არასავალდებულო. ამ დღემდე წვდომები არასდროს ითვლება, დღეების რაოდენობის მიუხედავად; მაგალითად, მხოლოდ გამომცემლობის ხელახალი გაშვებიდან დასათვლელად."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "უნიკალური წვდომები ერთსა და იმავე მკითხველს ითვლიან ერთხელ თითო წიგნსა და დღეზე და ნაკლებად განიცდიან ავტომატიზებული ტრაფიკის გავლენას."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "შლის ბრაუზერად მოჩვენებული რობოტების წვდომებს (IP მისამართების გროვები, არარსებული ბრაუზერები, ავტომატური კლიენტები). არ ცვლის OMP-ის ოფიციალურ სტატისტიკას."

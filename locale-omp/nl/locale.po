@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nl\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok voor de zijbalk met een wereldkaart van de herkomst van de toegang tot de uitgeverij, over de laatste dagen of sinds een datum. Het gebruikt de geografische gebruiksstatistieken die OMP al bewaart: er wordt niets naar andere diensten verzonden."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Wereldkaart die de landen markeert van waaruit de uitgeverij wordt geraadpleegd"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "De kaart is leeg omdat de geografische gebruiksstatistieken zijn uitgeschakeld. Een sitebeheerder kan ze inschakelen via {$path} (het landniveau volstaat). Alleen de beheerders van de uitgeverij zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "De kaart verschijnt zodra de gebruiksstatistieken met geografische gegevens zijn verwerkt, meestal de dag na het inschakelen. Alleen de beheerders van de uitgeverij zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Er is geen toegang met een bekend land in de periode die voor de kaart is ingesteld. Alleen de beheerders van de uitgeverij zien dit bericht."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "De kaart toont de landen waar de toegang vandaan komt, volgens de gebruiksstatistieken van OMP. Ze wordt elk uur bijgewerkt, op basis van de al verwerkte statistieken, die tot gisteren lopen."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Optioneel. Toegang vóór deze dag wordt nooit meegeteld, ongeacht het aantal dagen; bijvoorbeeld om pas te tellen vanaf een herstart van de uitgeverij."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unieke toegang telt dezelfde lezer één keer per boek en per dag, en wordt minder beïnvloed door geautomatiseerd verkeer."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Verwijdert toegang van robots die zich voordoen als browsers (zwermen IP-adressen, niet-bestaande browsers, geautomatiseerde clients). Wijzigt de officiële statistieken van OMP niet."

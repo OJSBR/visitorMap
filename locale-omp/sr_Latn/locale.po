@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sr_Latn\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok za bočnu traku sa mapom sveta koja pokazuje odakle dolaze pristupi izdavaču u poslednjim danima ili od određenog datuma. Koristi geografsku statistiku korišćenja koju OMP već čuva: ništa se ne šalje drugim servisima."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa sveta koja ističe zemlje iz kojih se pristupa izdavaču"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa je prazna jer je geografska statistika korišćenja isključena. Administrator sajta može da je uključi u {$path} (nivo zemlje je dovoljan). Ovu poruku vide samo menadžeri izdavača."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa će se pojaviti kada statistika korišćenja bude obrađena sa geografskim podacima, obično dan nakon uključivanja. Ovu poruku vide samo menadžeri izdavača."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "U periodu podešenom za mapu nema pristupa sa poznatom zemljom. Ovu poruku vide samo menadžeri izdavača."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapa prikazuje zemlje iz kojih dolaze pristupi, prema statistici korišćenja OMP-a. Ažurira se svakog sata iz već obrađene statistike, koja seže do juče."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opciono. Pristupi pre ovog dana se nikada ne broje, bez obzira na broj dana; na primer, za brojanje tek od ponovnog pokretanja izdavača."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Jedinstveni pristupi broje istog čitaoca jednom po knjizi i danu i manje na njih utiče automatizovani saobraćaj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Uklanja pristupe robota koji se predstavljaju kao pregledači (rojevi IP adresa, nepostojeći pregledači, automatizovani klijenti). Ne menja zvaničnu statistiku OMP-a."

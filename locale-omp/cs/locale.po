@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: cs\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok postranního panelu s mapou světa, odkud přicházejí přístupy k nakladatelství, za poslední dny nebo od určitého data. Využívá geografické statistiky využití, které OMP už uchovává: nic se neodesílá jiným službám."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa světa zvýrazňující země, odkud přicházejí přístupy k nakladatelství"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa je prázdná, protože geografické statistiky využití jsou vypnuté. Správce webu je může zapnout v {$path} (stačí úroveň země). Tuto zprávu vidí jen správci nakladatelství."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa se zobrazí, jakmile budou statistiky využití zpracovány s geografickými údaji, obvykle den po jejich zapnutí. Tuto zprávu vidí jen správci nakladatelství."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "V období nastaveném pro mapu nejsou žádné přístupy se známou zemí. Tuto zprávu vidí jen správci nakladatelství."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapa ukazuje země, odkud přicházejí přístupy, podle statistik využití OMP. Aktualizuje se každou hodinu z již zpracovaných statistik, které sahají do včerejška."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Nepovinné. Přístupy před tímto dnem se nikdy nezapočítávají, bez ohledu na počet dní; například pro počítání až od znovuspuštění nakladatelství."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unikátní přístupy počítají stejného čtenáře jednou za knihu a den a méně je ovlivňuje automatizovaný provoz."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Odstraní přístupy robotů, kteří se vydávají za prohlížeče (roje IP adres, neexistující prohlížeče, automatizovaní klienti). Nemění oficiální statistiky OMP."

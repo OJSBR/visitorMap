@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ru\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок боковой панели с картой мира, показывающей, откуда приходят обращения к издательству за последние дни или с определённой даты. Использует географическую статистику использования, которую OMP уже хранит: ничего не отправляется в другие сервисы."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Карта мира, выделяющая страны, из которых обращаются к издательству"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Карта пуста, потому что географическая статистика использования отключена. Администратор сайта может включить её в разделе {$path} (достаточно уровня страны). Это сообщение видят только менеджеры издательства."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Карта появится, когда статистика использования будет обработана с географическими данными, обычно на следующий день после включения. Это сообщение видят только менеджеры издательства."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "За период, заданный для карты, нет обращений из известных стран. Это сообщение видят только менеджеры издательства."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Карта показывает страны, из которых приходят обращения, по статистике использования OMP. Обновляется каждый час по уже обработанной статистике, которая доходит до вчерашнего дня."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Необязательно. Обращения раньше этого дня никогда не учитываются, независимо от числа дней; например, чтобы считать только с перезапуска издательства."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Уникальные обращения учитывают одного и того же читателя один раз на книгу в день и меньше зависят от автоматического трафика."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Убирает обращения роботов, выдающих себя за браузеры (рои IP-адресов, несуществующие браузеры, автоматические клиенты). Официальную статистику OMP не меняет."

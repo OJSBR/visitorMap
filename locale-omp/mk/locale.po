@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: mk\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок за страничната лента со карта на светот за потеклото на пристапите до издавачот, во последните денови или од одреден датум. Ја користи географската статистика за користење што OMP веќе ја чува: ништо не се испраќа до други услуги."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Карта на светот што ги истакнува земјите од кои се пристапува до издавачот"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Мапата е празна бидејќи географската статистика за користење е исклучена. Администратор на страницата може да ја вклучи во {$path} (нивото на земја е доволно). Само менаџерите на издавачот ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Мапата ќе се појави кога статистиката за користење ќе се обработи со географски податоци, обично ден по вклучувањето. Само менаџерите на издавачот ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Нема пристапи со позната земја во периодот поставен за мапата. Само менаџерите на издавачот ја гледаат оваа порака."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Мапата ги прикажува земјите од кои доаѓаат пристапите, според статистиката за користење на OMP. Се ажурира секој час од веќе обработената статистика, која трае до вчера."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Опционално. Пристапите пред овој ден никогаш не се бројат, без оглед на бројот на денови; на пример, за броење само од повторното лансирање на издавачот."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Уникатните пристапи го бројат истиот читател еднаш по книга и по ден и помалку се под влијание на автоматизиран сообраќај."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Ги отстранува пристапите на роботи што се претставуваат како прелистувачи (роеви IP-адреси, непостоечки прелистувачи, автоматизирани клиенти). Не ја менува официјалната статистика на OMP."

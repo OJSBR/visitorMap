@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fr_CA\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc de la barre latérale présentant une carte du monde de l'origine des accès à la maison d'édition, sur les derniers jours ou depuis une date. Il utilise les statistiques géographiques d'utilisation qu'OMP conserve déjà : rien n'est envoyé à d'autres services."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Carte du monde qui met en évidence les pays d'où proviennent les accès à la maison d'édition"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "La carte est vide, car les statistiques géographiques d'utilisation sont désactivées. Un administrateur du site peut les activer dans {$path} (le niveau du pays suffit). Seuls les gestionnaires de la maison d'édition voient ce message."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "La carte apparaîtra lorsque les statistiques d'utilisation auront été traitées avec des données géographiques, généralement le lendemain de leur activation. Seuls les gestionnaires de la maison d'édition voient ce message."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Aucun accès dont le pays est connu dans la période définie pour la carte. Seuls les gestionnaires de la maison d'édition voient ce message."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "La carte montre les pays d'où proviennent les accès, d'après les statistiques d'utilisation d'OMP. Elle est mise à jour toutes les heures, à partir des statistiques déjà traitées, qui vont jusqu'à hier."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Facultatif. Les accès antérieurs à ce jour ne sont jamais comptés, quel que soit le nombre de jours ; par exemple, pour ne compter qu'à partir d'une relance de la maison d'édition."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Les accès uniques comptent un même lecteur une seule fois par livre et par jour, et sont moins sensibles au trafic automatisé."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Retire les accès de robots qui se font passer pour des navigateurs (essaims d'adresses IP, navigateurs inexistants, clients automatisés). Ne modifie pas les statistiques officielles d'OMP."

@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: da\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok til sidepanelet med et verdenskort over, hvor adgangen til forlaget kommer fra, i de seneste dage eller siden en dato. Den bruger de geografiske brugsstatistikker, som OMP allerede gemmer: intet sendes til andre tjenester."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Verdenskort, der fremhæver de lande, hvorfra der er adgang til forlaget"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Kortet er tomt, fordi de geografiske brugsstatistikker er slået fra. En webstedsadministrator kan slå dem til under {$path} (landeniveau er nok). Kun forlagets ledere ser denne besked."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Kortet vises, når brugsstatistikkerne er behandlet med geografiske data, som regel dagen efter, at de er slået til. Kun forlagets ledere ser denne besked."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Der er ingen adgange med kendt land i den periode, der er angivet for kortet. Kun forlagets ledere ser denne besked."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Kortet viser de lande, adgangen kommer fra, ifølge OMP's brugsstatistikker. Det opdateres hver time ud fra de allerede behandlede statistikker, som går til og med i går."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Valgfri. Adgange før denne dag tælles aldrig med, uanset antallet af dage; for eksempel for kun at tælle fra en genlancering af forlaget."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unikke adgange tæller den samme læser én gang pr. bog og dag og påvirkes mindre af automatiseret trafik."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Fjerner adgange fra robotter, der udgiver sig for at være browsere (sværme af IP-adresser, browsere der ikke findes, automatiserede klienter). Ændrer ikke OMP's officielle statistikker."

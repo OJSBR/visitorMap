@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: tr\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Yayınevine yapılan erişimlerin nereden geldiğini son günlerde veya bir tarihten bu yana dünya haritasında gösteren kenar çubuğu bloğu. OMP'nin zaten sakladığı coğrafi kullanım istatistiklerini kullanır: başka hizmetlere hiçbir şey gönderilmez."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Yayınevine erişilen ülkeleri vurgulayan dünya haritası"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Coğrafi kullanım istatistikleri kapalı olduğu için harita boş. Bir site yöneticisi bunları {$path} bölümünden açabilir (ülke düzeyi yeterlidir). Bu mesajı yalnızca yayınevi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Harita, kullanım istatistikleri coğrafi verilerle işlendikten sonra, genellikle açıldıkları günün ertesi günü görünür. Bu mesajı yalnızca yayınevi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Harita için belirlenen dönemde ülkesi bilinen erişim yok. Bu mesajı yalnızca yayınevi yöneticileri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Harita, OMP kullanım istatistiklerine göre erişimlerin geldiği ülkeleri gösterir. Dünün sonuna kadar işlenmiş istatistiklerden saatte bir güncellenir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "İsteğe bağlı. Bu günden önceki erişimler, gün sayısı ne olursa olsun asla sayılmaz; örneğin yalnızca yayınevinin yeniden başlatılmasından itibaren saymak için."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Tekil erişimler aynı okuru kitap ve gün başına bir kez sayar ve otomatik trafikten daha az etkilenir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Kendini tarayıcı gibi gösteren robotların erişimlerini çıkarır (IP adresi sürüleri, var olmayan tarayıcılar, otomatik istemciler). OMP'nin resmi istatistiklerini değiştirmez."

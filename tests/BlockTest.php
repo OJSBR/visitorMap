@@ -23,6 +23,7 @@ namespace APP\plugins\blocks\visitorMap\tests;
 
 use APP\core\Application;
 use APP\core\PageRouter;
+use APP\file\PublicFileManager;
 use APP\plugins\blocks\visitorMap\classes\migration\VisitorMapMigration;
 use APP\plugins\blocks\visitorMap\classes\State;
 use APP\plugins\blocks\visitorMap\VisitorMapPlugin;
@@ -105,6 +106,23 @@ class BlockTest extends PKPTestCase
         parent::tearDown();
     }
 
+    public function testTheApplicationGetsItsOwnTexts(): void
+    {
+        $alt = Locale::get('plugins.blocks.visitorMap.alt', [], 'en');
+        $description = Locale::get('plugins.blocks.visitorMap.description', [], 'en');
+
+        if (Application::get()->getName() === 'omp') {
+            $this->assertSame('World map shading the countries the accesses to the press come from', $alt);
+            $this->assertStringContainsString('OMP', $description);
+            $this->assertStringNotContainsString('OJS', $description);
+        } else {
+            $this->assertSame('World map shading the countries the accesses to the journal come from', $alt);
+            $this->assertStringContainsString('OJS', $description);
+        }
+        // A key outside locale-omp keeps the plugin's own text on both.
+        $this->assertSame('Visitor Map', Locale::get('plugins.blocks.visitorMap.displayName', [], 'en'));
+    }
+
     public function testTheBlockShowsTheMapTheNumbersAndTheCountries(): void
     {
         $this->configure(['days' => 7, 'topCount' => 3, 'metric' => 'unique', 'showSummary' => true]);
@@ -113,7 +131,7 @@ class BlockTest extends PKPTestCase
 
         $html = $this->render();
 
-        $this->assertMatchesRegularExpression('~<img class="visitor_map__image" src="[^"]*/journals/' . $this->contextId() . '/visitorMap-[0-9a-f]{16}\.svg"~', $html);
+        $this->assertMatchesRegularExpression('~<img class="visitor_map__image" src="[^"]*/' . preg_quote($this->contextFolder(), '~') . '/visitorMap-[0-9a-f]{16}\.svg"~', $html);
         $svg = $this->mapFile($html);
         $this->assertFileExists($svg);
         $this->assertStringContainsString('<path class="c5" d="', (string) file_get_contents($svg));
@@ -325,10 +343,16 @@ class BlockTest extends PKPTestCase
 
     private function mapFile(string $html): string
     {
-        preg_match('~/journals/\d+/(visitorMap-[0-9a-f]{16}\.svg)~', $html, $match);
+        preg_match('~/' . preg_quote($this->contextFolder(), '~') . '/(visitorMap-[0-9a-f]{16}\.svg)~', $html, $match);
         $this->assertNotEmpty($match, 'the block has no map');
 
-        return Core::getBaseDir() . '/public/journals/' . $this->contextId() . '/' . $match[1];
+        return Core::getBaseDir() . '/' . $this->contextFolder() . '/' . $match[1];
+    }
+
+    /** The public folder of the context: public/journals/<id> on OJS, public/presses/<id> on OMP. */
+    private function contextFolder(): string
+    {
+        return (new PublicFileManager())->getContextFilesPath($this->contextId());
     }
 
     /** There is no URL on the command line, so the journal is pinned on the router. */

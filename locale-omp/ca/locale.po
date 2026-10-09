@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ca\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloc de la barra lateral amb un mapamundi de l'origen dels accessos a l'editorial, en els darrers dies o des d'una data. Fa servir les estadístiques geogràfiques d'ús que l'OMP ja desa: no s'envia res a altres serveis."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapamundi que destaca els països des d'on s'accedeix a l'editorial"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "El mapa és buit perquè les estadístiques geogràfiques d'ús estan desactivades. Un administrador del lloc les pot activar a {$path} (n'hi ha prou amb el nivell de país). Només els gestors de l'editorial veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "El mapa apareixerà quan les estadístiques d'ús es processin amb dades geogràfiques, normalment l'endemà d'activar-les. Només els gestors de l'editorial veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "No hi ha accessos amb país conegut en el període definit per al mapa. Només els gestors de l'editorial veuen aquest missatge."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "El mapa mostra els països des d'on s'accedeix, segons les estadístiques d'ús de l'OMP. S'actualitza cada hora, a partir de les estadístiques ja processades, que arriben fins ahir."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opcional. Els accessos anteriors a aquest dia no es compten mai, sigui quin sigui el nombre de dies; per exemple, per comptar només des d'un rellançament de l'editorial."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Els accessos únics compten el mateix lector una vegada per llibre i per dia, i es veuen menys afectats pel trànsit automatitzat."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Elimina els accessos de robots que es fan passar per navegadors (eixams d'IP, navegadors inexistents, clients automàtics). No modifica les estadístiques oficials de l'OMP."

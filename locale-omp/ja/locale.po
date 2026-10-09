@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ja\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "直近の日数または指定日以降の、出版社へのアクセス元を世界地図で示すサイドバーのブロックです。OMP がすでに保持している地理的な利用統計を使うため、ほかのサービスには何も送信されません。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "出版社へのアクセス元の国を強調した世界地図"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "地理的な利用統計が無効になっているため、地図は空です。サイト管理者が {$path} で有効にできます（国レベルで十分です）。このメッセージは出版社の管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "地理データ付きで利用統計が処理されると地図が表示されます。通常は有効にした翌日です。このメッセージは出版社の管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "地図に設定した期間に、国が判明しているアクセスはありません。このメッセージは出版社の管理者にのみ表示されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "OMP の利用統計にもとづき、アクセス元の国を地図に表示します。昨日までの処理済みの統計から、1時間ごとに更新されます。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "任意。日数に関係なく、この日より前のアクセスは数えません。たとえば出版社の再出発以降だけを数える場合に使います。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "ユニークアクセスは同じ読者を書籍ごと・日ごとに1回だけ数えるため、自動化されたトラフィックの影響を受けにくくなります。"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "ブラウザを装うロボットのアクセスを除外します（大量の IP アドレス、存在しないブラウザ、自動クライアント）。OMP の公式統計は変更しません。"

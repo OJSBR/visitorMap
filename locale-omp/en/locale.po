@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: en\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "A sidebar block with a world map of where the accesses to the press come from, over the last days or since a date. It uses the geographic usage statistics OMP already keeps: nothing is sent to other services."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "World map shading the countries the accesses to the press come from"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "The map is empty because geographic usage statistics are turned off. A site administrator can turn them on in {$path} (the country level is enough). Only press managers see this message."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "The map will appear once the usage statistics have been processed with geographic data, usually the day after they are turned on. Only press managers see this message."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "There are no accesses with a known country in the period set for the map. Only press managers see this message."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "The map shows the countries the accesses come from, according to the usage statistics of OMP. It is updated every hour, from the statistics already processed, which run up to yesterday."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Optional. Accesses before this day are never counted, whatever the number of days, for example to count only from a relaunch of the press."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unique accesses count the same reader once per book and day, and are less affected by automated traffic."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Removes accesses from robots that pass for browsers (swarms of addresses, browsers that do not exist, automated clients). Does not change the official statistics of OMP."

@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nb_NO\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blokk for sidefeltet med et verdenskart over hvor tilgangen til forlaget kommer fra, de siste dagene eller siden en dato. Den bruker de geografiske bruksstatistikkene OMP allerede lagrer: ingenting sendes til andre tjenester."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Verdenskart som fremhever landene forlaget brukes fra"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Kartet er tomt fordi de geografiske bruksstatistikkene er slått av. En nettstedsadministrator kan slå dem på under {$path} (landnivå er nok). Bare forlagets ledere ser denne meldingen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Kartet vises når bruksstatistikkene er behandlet med geografiske data, vanligvis dagen etter at de ble slått på. Bare forlagets ledere ser denne meldingen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Det finnes ingen tilganger med kjent land i perioden som er satt for kartet. Bare forlagets ledere ser denne meldingen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Kartet viser landene tilgangene kommer fra, ifølge bruksstatistikkene i OMP. Det oppdateres hver time fra statistikk som allerede er behandlet, til og med i går."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Valgfritt. Tilganger før denne dagen telles aldri med, uansett antall dager; for eksempel for bare å telle fra en relansering av forlaget."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unike tilganger teller samme leser én gang per bok og dag, og påvirkes mindre av automatisert trafikk."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Fjerner tilganger fra roboter som utgir seg for å være nettlesere (svermer av IP-adresser, nettlesere som ikke finnes, automatiserte klienter). Endrer ikke den offisielle statistikken i OMP."

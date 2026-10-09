@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pt\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Bloco da barra lateral com um mapa-múndi da origem dos acessos à editora, nos últimos dias ou desde uma data. Usa as estatísticas geográficas de acesso que o OMP já guarda: nada é enviado a outros serviços."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Mapa-múndi que destaca os países de onde vêm os acessos à editora"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "O mapa está vazio porque as estatísticas geográficas de acesso estão desligadas. Um administrador do sítio pode ligá-las em {$path} (o nível de país é suficiente). Só os gestores da editora veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "O mapa aparece quando as estatísticas de acesso forem processadas com dados geográficos, normalmente no dia seguinte ao da ativação. Só os gestores da editora veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Não há acessos com país conhecido no período definido para o mapa. Só os gestores da editora veem esta mensagem."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "O mapa mostra os países de onde vêm os acessos, segundo as estatísticas de acesso do OMP. É atualizado a cada hora, a partir das estatísticas já processadas, que vão até ontem."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Opcional. Os acessos anteriores a este dia nunca são contados, qualquer que seja o número de dias; por exemplo, para contar apenas a partir de um relançamento da editora."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Os acessos únicos contam o mesmo leitor uma vez por livro e por dia, e são menos afetados por tráfego automatizado."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Remove acessos de robôs que se fazem passar por navegadores (enxames de endereços IP, navegadores inexistentes, clientes automáticos). Não altera as estatísticas oficiais do OMP."

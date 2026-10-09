@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: az\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Nəşriyyata girişlərin mənşəyini son günlər və ya müəyyən tarixdən bəri dünya xəritəsində göstərən yan panel bloku. OMP-in artıq saxladığı coğrafi istifadə statistikasından istifadə edir: heç nə başqa xidmətlərə göndərilmir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Nəşriyyata girişlərin gəldiyi ölkələri vurğulayan dünya xəritəsi"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Xəritə boşdur, çünki coğrafi istifadə statistikası söndürülüb. Sayt administratoru onu {$path} bölməsində yandıra bilər (ölkə səviyyəsi kifayətdir). Bu mesajı yalnız nəşriyyat menecerləri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Xəritə istifadə statistikası coğrafi məlumatla emal olunduqdan sonra, adətən yandırıldığı günün ertəsi, görünəcək. Bu mesajı yalnız nəşriyyat menecerləri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Xəritə üçün təyin olunmuş dövrdə məlum ölkədən giriş yoxdur. Bu mesajı yalnız nəşriyyat menecerləri görür."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Xəritə OMP istifadə statistikasına görə girişlərin gəldiyi ölkələri göstərir. Hər saat artıq emal olunmuş və dünənə qədər olan statistikadan yenilənir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "İstəyə bağlı. Bu gündən əvvəlki girişlər, günlərin sayından asılı olmayaraq, heç vaxt sayılmır; məsələn, yalnız nəşriyyatın yenidən fəaliyyətə başlamasından saymaq üçün."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Unikal girişlər eyni oxucunu hər kitab və hər gün üçün bir dəfə sayır və avtomatlaşdırılmış trafikdən daha az təsirlənir."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Özünü brauzer kimi göstərən robotların girişlərini çıxarır (IP ünvanı sürüləri, mövcud olmayan brauzerlər, avtomatik müştərilər). OMP-in rəsmi statistikasını dəyişmir."

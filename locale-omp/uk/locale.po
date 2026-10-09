@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: uk\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Блок бічної панелі з мапою світу, що показує, звідки надходять звернення до видавництва за останні дні або від певної дати. Використовує географічну статистику використання, яку OMP уже зберігає: нічого не надсилається іншим сервісам."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Мапа світу, що виділяє країни, з яких звертаються до видавництва"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Мапа порожня, бо географічну статистику використання вимкнено. Адміністратор сайту може ввімкнути її в розділі {$path} (достатньо рівня країни). Це повідомлення бачать лише менеджери видавництва."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Мапа з’явиться, коли статистику використання буде оброблено з географічними даними, зазвичай наступного дня після ввімкнення. Це повідомлення бачать лише менеджери видавництва."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "За період, заданий для мапи, немає звернень із відомих країн. Це повідомлення бачать лише менеджери видавництва."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Мапа показує країни, з яких надходять звернення, за статистикою використання OMP. Оновлюється щогодини з уже обробленої статистики, що сягає вчорашнього дня."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Необов’язково. Звернення до цього дня ніколи не враховуються, незалежно від кількості днів; наприклад, щоб рахувати лише від перезапуску видавництва."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Унікальні звернення враховують того самого читача один раз на книгу за день і менше залежать від автоматизованого трафіку."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Прибирає звернення роботів, що видають себе за браузери (рої IP-адрес, неіснуючі браузери, автоматичні клієнти). Офіційну статистику OMP не змінює."

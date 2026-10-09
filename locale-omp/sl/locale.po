@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sl\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blok stranske vrstice z zemljevidom sveta, ki kaže, od kod prihajajo dostopi do založbe v zadnjih dneh ali od izbranega datuma. Uporablja geografsko statistiko uporabe, ki jo OMP že hrani: nič se ne pošilja drugim storitvam."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Zemljevid sveta, ki poudari države, iz katerih dostopajo do založbe"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Zemljevid je prazen, ker je geografska statistika uporabe izklopljena. Skrbnik spletišča jo lahko vklopi v {$path} (raven države zadostuje). To sporočilo vidijo le upravniki založbe."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Zemljevid se prikaže, ko bo statistika uporabe obdelana z geografskimi podatki, običajno dan po vklopu. To sporočilo vidijo le upravniki založbe."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "V obdobju, nastavljenem za zemljevid, ni dostopov z znano državo. To sporočilo vidijo le upravniki založbe."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Zemljevid prikazuje države, od koder prihajajo dostopi, po statistiki uporabe OMP. Posodablja se vsako uro iz že obdelane statistike, ki sega do včeraj."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Neobvezno. Dostopi pred tem dnem se nikoli ne štejejo, ne glede na število dni; na primer za štetje šele od ponovnega zagona založbe."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Edinstveni dostopi štejejo istega bralca enkrat na knjigo in dan ter nanje manj vpliva samodejni promet."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Odstrani dostope robotov, ki se izdajajo za brskalnike (roji naslovov IP, neobstoječi brskalniki, samodejni odjemalci). Ne spremeni uradne statistike OMP."

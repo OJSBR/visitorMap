@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: it\n"
+
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Blocco della barra laterale con un planisfero della provenienza degli accessi alla casa editrice, negli ultimi giorni o da una data. Usa le statistiche geografiche di utilizzo che OMP conserva già: nulla viene inviato ad altri servizi."
+
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Planisfero che evidenzia i paesi da cui provengono gli accessi alla casa editrice"
+
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "La mappa è vuota perché le statistiche geografiche di utilizzo sono disattivate. Un amministratore del sito può attivarle in {$path} (basta il livello del paese). Solo i gestori della casa editrice vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "La mappa comparirà quando le statistiche di utilizzo saranno elaborate con dati geografici, di solito il giorno dopo la loro attivazione. Solo i gestori della casa editrice vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Non ci sono accessi con paese noto nel periodo definito per la mappa. Solo i gestori della casa editrice vedono questo messaggio."
+
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "La mappa mostra i paesi da cui provengono gli accessi, secondo le statistiche di utilizzo di OMP. Si aggiorna ogni ora, a partire dalle statistiche già elaborate, che arrivano fino a ieri."
+
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Facoltativo. Gli accessi precedenti a questo giorno non vengono mai contati, qualunque sia il numero di giorni; ad esempio, per contare solo da un rilancio della casa editrice."
+
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Gli accessi unici contano lo stesso lettore una volta per libro e per giorno, e risentono meno del traffico automatizzato."
+
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Rimuove gli accessi dei robot che si spacciano per browser (sciami di indirizzi IP, browser inesistenti, client automatici). Non modifica le statistiche ufficiali di OMP."

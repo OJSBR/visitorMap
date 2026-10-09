@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: eu\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Albo-barrako blokea, argitaletxerako sarbideen jatorria mundu-mapa batean erakusten duena, azken egunetan edo data jakin batetik. OMPk dagoeneko gordetzen dituen erabilera-estatistika geografikoak erabiltzen ditu: ez zaie ezer bidaltzen beste zerbitzu batzuei."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Argitaletxerako sarbideak zein herrialdetatik datozen nabarmentzen duen mundu-mapa"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Mapa hutsik dago, erabilera-estatistika geografikoak desgaituta daudelako. Guneko administratzaile batek {$path} atalean gai ditzake (herrialde-maila nahikoa da). Argitaletxearen kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Mapa agertuko da erabilera-estatistikak datu geografikoekin prozesatzen direnean, normalean gaitu eta hurrengo egunean. Argitaletxearen kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Ez dago herrialde ezaguneko sarbiderik maparako zehaztutako aldian. Argitaletxearen kudeatzaileek soilik ikusten dute mezu hau."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Mapak sarbideak zein herrialdetatik datozen erakusten du, OMPren erabilera-estatistiken arabera. Orduro eguneratzen da, dagoeneko prozesatutako estatistiketatik, atzora artekoak."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Aukerakoa. Egun honen aurreko sarbideak ez dira inoiz zenbatzen, egun kopurua edozein dela ere; adibidez, argitaletxearen berrabiarazte batetik aurrera soilik zenbatzeko."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Sarbide bakarrek irakurle bera behin zenbatzen dute liburu eta egun bakoitzeko, eta trafiko automatizatuak gutxiago eragiten die."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Nabigatzaile itxura hartzen duten roboten sarbideak kentzen ditu (IP helbide-sareak, existitzen ez diren nabigatzaileak, bezero automatikoak). Ez ditu OMPren estatistika ofizialak aldatzen."

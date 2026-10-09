@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fi\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Sivupalkin lohko, joka näyttää maailmankartalla, mistä kustantamon käytöt tulevat viime päivinä tai tietystä päivästä alkaen. Se käyttää OMP:n jo tallentamia maantieteellisiä käyttötilastoja: mitään ei lähetetä muihin palveluihin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Maailmankartta, joka korostaa maita, joista kustantamoa käytetään"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "Kartta on tyhjä, koska maantieteelliset käyttötilastot on poistettu käytöstä. Sivuston ylläpitäjä voi ottaa ne käyttöön kohdassa {$path} (maataso riittää). Vain kustantamon hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "Kartta tulee näkyviin, kun käyttötilastot on käsitelty maantieteellisine tietoineen, yleensä käyttöönottoa seuraavana päivänä. Vain kustantamon hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "Kartalle määritetyllä jaksolla ei ole käyttöjä, joiden maa tunnetaan. Vain kustantamon hallinnoijat näkevät tämän viestin."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "Kartta näyttää maat, joista käytöt tulevat, OMP:n käyttötilastojen mukaan. Se päivittyy tunneittain jo käsitellyistä tilastoista, jotka ulottuvat eiliseen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Valinnainen. Tätä päivää aiempia käyttöjä ei koskaan lasketa päivien määrästä riippumatta; esimerkiksi laskeaksesi vain kustantamon uudelleenkäynnistyksestä alkaen."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Yksilölliset käytöt laskevat saman lukijan kerran kirjaa ja päivää kohden, ja automaattinen liikenne vaikuttaa niihin vähemmän."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Poistaa selaimiksi tekeytyvien robottien käytöt (IP-osoiteparvet, olemattomat selaimet, automaattiset asiakasohjelmat). Ei muuta OMP:n virallisia tilastoja."

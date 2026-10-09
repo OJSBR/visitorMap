@@ -1,15 +1,17 @@
-# Visitor Map — OJS plugin
+# Visitor Map — OJS and OMP plugin
 
 [![OJS](https://img.shields.io/badge/OJS-3.5-brightgreen)](https://pkp.sfu.ca/ojs/)
-[![Version](https://img.shields.io/badge/version-1.1.0.0-blue)](version.xml)
+[![OMP](https://img.shields.io/badge/OMP-3.5-brightgreen)](https://pkp.sfu.ca/omp/)
+[![Version](https://img.shields.io/badge/version-1.2.0.0-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/visitorMap/releases/download/1.1.0.0/visitorMap-1.1.0.0.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OJS 3.5 · OMP 3.5](https://github.com/OJSBR/visitorMap/releases/download/1.2.0.0/visitorMap-1.2.0.0.tar.gz) — or browse all [Releases](../../releases).
 
-A sidebar block for **Open Journal Systems (OJS)** with a world map of where the accesses to the
-journal come from, over the last days or since a date. It is drawn from the geographic usage
-statistics OJS already keeps: **no tracking script, no third-party service, and the reader's
-browser talks to no one but the journal.**
+A sidebar block for **Open Journal Systems (OJS)** and **Open Monograph Press (OMP)** with a world
+map of where the accesses to the journal or press come from, over the last days or since a date. It
+is drawn from the geographic usage statistics OJS and OMP already keep: **no tracking script, no
+third-party service, and the reader's browser talks to no one but the journal or press.**
+The same package installs on both; the text below says "journal" and "OJS" for short.
 
 > **Developed and maintained by [OJSBR](https://ojsbr.com).** See the
 > [Credits & authorship](#credits--authorship) section below.
@@ -18,11 +20,13 @@ browser talks to no one but the journal.**
 
 ## Compatibility & branches
 
-| OJS version | Branch | Plugin release |
+| Application | Branch | Plugin release |
 |-------------|--------|----------------|
-| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.1.0.0 |
+| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.2.0.0 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.2.0.0 |
 
-38 languages.
+38 languages. On OMP, the texts that name the journal, its articles and OJS come from
+`locale-omp/`, which names the press, its books and OMP for the same keys (see below).
 
 ## The problem
 
@@ -65,9 +69,16 @@ of one leak into the other. And all of it duplicates data OJS already collects.
    first summing of the statistics is queued right away.
 3. Add the block to the sidebar in **Settings → Website → Appearance → Setup → Sidebar**.
 
-**Geographic statistics must be on.** In OJS 3.5 they are a site setting: **Administration → Site
-Settings → Statistics → Geographical Statistics** (the country level is enough). Only accesses
+**Geographic statistics must be on.** In OJS and OMP 3.5 they are a site setting: **Administration →
+Site Settings → Statistics → Geographical Statistics** (the country level is enough). Only accesses
 recorded while it is on have a country.
+
+**On OMP** the plugin works the same way: the core keeps the same geographic statistics
+(`metrics_submission_geo_daily` and `_monthly`) and the same usage log, so the summing, the
+anti-scraper filter and the map are shared code; the map file goes to `public/presses/<id>/`. Only
+nine texts change: on OMP the plugin registers `locale-omp/` above its own locale, with the same
+keys saying *press*, *book* and *OMP* — no key of the core is touched, and a press can still
+override them with Custom Locale.
 
 ## Configuration
 
@@ -198,9 +209,17 @@ statistics, the plugin's summed history remains.
   filter switched off comes back off); the reader sees the map
   on the home page, loaded lazily and drawn, with the numbers, the list and the chosen colour —
   or, where there are no geographic statistics, no block at all. Sidebar and settings are put back.
+- **Both applications:** the PHP suite runs unchanged on OJS and on OMP (the map file is looked for in
+  the public folder of the running application); a test checks that the application gets its own
+  texts — *journal*/OJS on OJS, *press*/OMP on OMP — and that `locale-omp/` covers the 38 languages
+  with the same keys, the same placeholders and no "OJS". The CI matrix runs OJS and OMP, on MySQL
+  and PostgreSQL.
 - Verified on OJS 3.5.0.3 with 57 days of daily and two months of monthly statistics, against
   totals computed independently; the queries were measured, read-only, on a journal with 5 million
-  rows of daily statistics.
+  rows of daily statistics. Verified on **OMP 3.5.0.5** with 60 days of daily and two months of
+  monthly statistics on its books: the summed tables equal the totals computed apart (900 day ×
+  country and 30 month × country combinations), and the reader sees the map with 5,760 unique
+  accesses from 15 countries, as computed.
 
 Tests, tools and screenshots are kept in the repository and are not part of the release package.
 
@@ -229,21 +248,25 @@ Distributed under the **GNU GPL v3**. See [`LICENSE`](LICENSE) and `docs/COPYING
 
 ## 🇧🇷 Português
 
-Bloco da barra lateral para o **Open Journal Systems (OJS)** com um mapa-múndi da origem dos
-acessos à revista, nos últimos dias ou desde uma data. É desenhado a partir das estatísticas
-geográficas de acesso que o OJS já guarda: **nenhum script de rastreamento, nenhum serviço de
-terceiros, e o navegador do leitor não conversa com ninguém além da revista.**
+Bloco da barra lateral para o **Open Journal Systems (OJS)** e o **Open Monograph Press (OMP)** com um
+mapa-múndi da origem dos acessos à revista ou editora, nos últimos dias ou desde uma data. É
+desenhado a partir das estatísticas geográficas de acesso que o OJS e o OMP já guardam: **nenhum
+script de rastreamento, nenhum serviço de terceiros, e o navegador do leitor não conversa com
+ninguém além da revista ou editora.** O mesmo pacote instala nos dois; o texto abaixo diz "revista"
+e "OJS" para abreviar.
 
 > **Desenvolvido e mantido pela [OJSBR](https://ojsbr.com).** Veja a seção
 > [Créditos e autoria](#créditos-e-autoria) abaixo.
 
 ### Compatibilidade e branches
 
-| Versão do OJS | Branch | Release do plugin |
-|---------------|--------|-------------------|
-| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.1.0.0 |
+| Aplicação | Branch | Release do plugin |
+|-----------|--------|-------------------|
+| OJS 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.2.0.0 |
+| OMP 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.2.0.0 |
 
-38 idiomas.
+38 idiomas. No OMP, os textos que falam da revista, dos artigos e do OJS vêm de `locale-omp/`, que
+fala da editora, dos livros e do OMP nas mesmas chaves.
 
 ### O problema
 
@@ -282,7 +305,13 @@ várias revistas os números de uma contaminam a outra. E tudo isso repete um da
 3. Coloque o bloco na barra lateral em **Configurações → Website → Aparência → Configurar →
    Barra Lateral**.
 
-**A estatística geográfica precisa estar ligada.** No OJS 3.5 ela é configuração do site:
+**No OMP** o plugin funciona do mesmo jeito: o núcleo guarda as mesmas estatísticas geográficas e o
+mesmo log de acessos, então a soma, o filtro anti-scraper e o mapa são o mesmo código; o arquivo do
+mapa vai para `public/presses/<id>/`. Só nove textos mudam, registrados a partir de `locale-omp/`
+acima das traduções do próprio plugin, sem tocar em nenhuma chave do núcleo (a editora ainda pode
+sobrescrevê-los com o Custom Locale).
+
+**A estatística geográfica precisa estar ligada.** No OJS e no OMP 3.5 ela é configuração do site:
 **Administração → Configurações do Portal → Estatísticas → Estatísticas de uso geográfico** (o nível de
 país basta). Só os acessos registrados com ela ligada têm país.
 
@@ -410,9 +439,15 @@ as estatísticas diárias, o histórico somado do plugin continua.
   desligado); o leitor vê o mapa na página inicial,
   carregado sob demanda e desenhado, com os números, a lista e a cor escolhida — ou, onde não há
   estatística geográfica, nenhum bloco. Barra lateral e configurações voltam ao que eram.
+- **As duas aplicações:** a suíte PHP roda igual no OJS e no OMP; um teste confere que cada aplicação
+  recebe os próprios textos (*revista*/OJS no OJS, *editora*/OMP no OMP) e que `locale-omp/` cobre os
+  38 idiomas com as mesmas chaves, os mesmos marcadores e sem "OJS". O CI roda OJS e OMP, em MySQL e
+  PostgreSQL.
 - Conferido no OJS 3.5.0.3 com 57 dias de estatística diária e dois meses de mensal, contra totais
   calculados de forma independente; as consultas foram medidas, só em leitura, numa revista com 5
-  milhões de linhas de estatística diária.
+  milhões de linhas de estatística diária. Conferido no **OMP 3.5.0.5** com 60 dias de diária e dois
+  meses de mensal nos livros: as tabelas somadas batem com os totais calculados à parte e o leitor vê
+  o mapa com 5.760 acessos únicos de 15 países, como calculado.
 
 ### Créditos e autoria
 

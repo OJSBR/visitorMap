@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hu\n"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.description"
+msgstr "Oldalsáv-blokk, amely világtérképen mutatja, honnan érkeznek a kiadó hozzáférései az elmúlt napokban vagy egy adott dátum óta. Az OMP által már tárolt földrajzi használati statisztikákat használja: semmi nem kerül más szolgáltatásokhoz."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.alt"
+msgstr "Világtérkép, amely kiemeli azokat az országokat, ahonnan a kiadót elérik"
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.geoDisabled"
+msgstr "A térkép üres, mert a földrajzi használati statisztikák ki vannak kapcsolva. A webhely adminisztrátora bekapcsolhatja őket itt: {$path} (az ország szintje elég). Ezt az üzenetet csak a kiadó kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.noData"
+msgstr "A térkép akkor jelenik meg, amikor a használati statisztikákat földrajzi adatokkal feldolgozták, általában a bekapcsolást követő napon. Ezt az üzenetet csak a kiadó kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.notice.emptyRange"
+msgstr "A térképhez beállított időszakban nincs ismert országból származó hozzáférés. Ezt az üzenetet csak a kiadó kezelői látják."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.intro"
+msgstr "A térkép azokat az országokat mutatja, ahonnan a hozzáférések érkeznek, az OMP használati statisztikái szerint. Óránként frissül a már feldolgozott, tegnapig tartó statisztikákból."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.startDate.description"
+msgstr "Nem kötelező. Az e nap előtti hozzáféréseket soha nem számolja, a napok számától függetlenül; például ha csak a kiadó újraindítása óta szeretne számolni."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.metric.description"
+msgstr "Az egyedi hozzáférések ugyanazt az olvasót könyvenként és naponként egyszer számolják, és kevésbé érinti őket az automatizált forgalom."
+
+#, fuzzy
+msgid "plugins.blocks.visitorMap.settings.antiScraper.description"
+msgstr "Eltávolítja a böngészőnek álcázott robotok hozzáféréseit (IP-címrajok, nem létező böngészők, automatizált kliensek). Nem módosítja az OMP hivatalos statisztikáit."
