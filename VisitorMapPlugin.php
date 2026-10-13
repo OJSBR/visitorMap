@@ -288,6 +288,13 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
             $data = $this->compute($request, $contextId, $from, $to, $settings);
         }
 
+        // The address of the map is the reader's own, built on every view and never taken from the
+        // cache: the request that filled the cache may have reached the web server by another host or
+        // port (the back-end port behind a proxy, for one), and that address broke the map for everyone.
+        if ($data['svgPath'] !== '') {
+            $data['svgUrl'] = self::publicUrl($request->getBaseUrl(), Core::getBaseDir(), $data['svgPath']);
+        }
+
         if ($data['total'] === 0) {
             $geo = $context->getEnableGeoUsageStats($request->getSite());
             $message = $geo === null || $geo === 'disabled'
@@ -379,6 +386,16 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
         $data['svgUrl'] = $request->getBaseUrl() . '/' . $folder . '/' . $name;
 
         return $data;
+    }
+
+    /**
+     * The public address of a file of the public folder, from the base address of the current request.
+     */
+    public static function publicUrl(string $baseUrl, string $baseDir, string $path): string
+    {
+        $relative = str_starts_with($path, $baseDir . '/') ? substr($path, strlen($baseDir) + 1) : ltrim($path, '/');
+
+        return rtrim($baseUrl, '/') . '/' . $relative;
     }
 
     /**

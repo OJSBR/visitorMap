@@ -145,6 +145,17 @@ class BlockTest extends PKPTestCase
     }
 
     /** The second view reads the cache: the plugin's tables are not queried again. */
+    public function testTheMapAddressIsTheReadersOwnNotTheCachedOne(): void
+    {
+        $this->assertSame(
+            'https://journal.example/public/journals/1/visitorMap-0123456789abcdef.svg',
+            VisitorMapPlugin::publicUrl('https://journal.example', '/var/www/ojs', '/var/www/ojs/public/journals/1/visitorMap-0123456789abcdef.svg')
+        );
+        $this->assertSame('https://journal.example/sub/public/journals/2/a.svg', VisitorMapPlugin::publicUrl('https://journal.example/sub/', '/srv', '/srv/public/journals/2/a.svg'));
+        $source = (string) file_get_contents(dirname(__DIR__) . '/VisitorMapPlugin.php');
+        $this->assertStringContainsString("\$data['svgUrl'] = self::publicUrl(\$request->getBaseUrl()", $source);
+    }
+
     public function testTheSecondViewComesFromTheCache(): void
     {
         $this->configure(['days' => 7]);
