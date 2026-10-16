@@ -282,6 +282,19 @@ class VisitorMapPlugin extends BlockPlugin implements HasTaskScheduler
         $key = 'visitorMap-' . $contextId . '-' . md5(json_encode([$state['version'] ?? 0, $from, $to, $settings]));
         $data = Cache::remember($key, self::CACHE_TTL, fn () => $this->compute($request, $contextId, $from, $to, $settings));
 
+        // A new installation has no closed day with countries yet: its first one is today, when the
+        // log of the day was processed early. Rather than hiding the map until tomorrow, the period
+        // then reaches today. The core never loads the current day by itself, so this changes nothing
+        // once a closed day is there.
+        if ($data['total'] === 0) {
+            $today = substr(Core::getCurrentDate(), 0, 10);
+            $todayKey = 'visitorMap-' . $contextId . '-' . md5(json_encode([$state['version'] ?? 0, $from, $today, $settings]));
+            $withToday = Cache::remember($todayKey, self::CACHE_TTL, fn () => $this->compute($request, $contextId, $from, $today, $settings));
+            if ($withToday['total'] > 0) {
+                [$to, $key, $data] = [$today, $todayKey, $withToday];
+            }
+        }
+
         // The file may have been removed from the public folder since it was cached.
         if ($data['total'] > 0 && !is_file($data['svgPath'])) {
             Cache::forget($key);
