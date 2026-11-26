@@ -2,10 +2,10 @@
 
 [![OJS](https://img.shields.io/badge/OJS-3.5-brightgreen)](https://pkp.sfu.ca/ojs/)
 [![OMP](https://img.shields.io/badge/OMP-3.5-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.2.0.2-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-5.0.0.0-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OJS 3.5 · OMP 3.5](https://github.com/OJSBR/visitorMap/releases/download/1.2.0.2/visitorMap-1.2.0.2.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OJS 3.5 · OMP 3.5](https://github.com/OJSBR/visitorMap/releases/download/5.0.0.0/visitorMap-5.0.0.0.tar.gz) — or browse all [Releases](../../releases).
 
 A sidebar block for **Open Journal Systems (OJS)** and **Open Monograph Press (OMP)** with a world
 map of where the accesses to the journal or press come from, over the last days or since a date. It
@@ -22,8 +22,8 @@ The same package installs on both; the text below says "journal" and "OJS" for s
 
 | Application | Branch | Plugin release |
 |-------------|--------|----------------|
-| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.2.0.2 |
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.2.0.2 |
+| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 5.0.0.0 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 5.0.0.0 |
 
 38 languages. On OMP, the texts that name the journal, its articles and OJS come from
 `locale-omp/`, which names the press, its books and OMP for the same keys (see below).
@@ -268,8 +268,8 @@ e "OJS" para abreviar.
 
 | Aplicação | Branch | Release do plugin |
 |-----------|--------|-------------------|
-| OJS 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.2.0.2 |
-| OMP 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.2.0.2 |
+| OJS 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 5.0.0.0 |
+| OMP 3.5.x | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 5.0.0.0 |
 
 38 idiomas. No OMP, os textos que falam da revista, dos artigos e do OJS vêm de `locale-omp/`, que
 fala da editora, dos livros e do OMP nas mesmas chaves.
