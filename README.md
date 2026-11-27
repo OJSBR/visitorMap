@@ -38,7 +38,7 @@ of one leak into the other. And all of it duplicates data OJS already collects.
 
 ## What it does
 
-<img src="docs/block.png" alt="The block in the sidebar" width="260" align="right">
+<img src="docs/block-en.png" alt="The block in the sidebar" width="260" align="right">
 
 - A **choropleth world map**, one shade per country, on a logarithmic scale — the accesses of a
   journal are concentrated in a handful of countries, and a linear scale would leave the rest
@@ -283,6 +283,8 @@ desnecessária diante da LGPD. O código de rastreio é da conta, não da revist
 várias revistas os números de uma contaminam a outra. E tudo isso repete um dado que o OJS já coleta.
 
 ### O que faz
+
+<img src="docs/block-pt_BR.png" alt="O bloco na barra lateral" width="260" align="right">
 
 - **Mapa-múndi coroplético**, um tom por país, em escala logarítmica — os acessos de uma revista
   se concentram em poucos países, e numa escala linear o resto pareceria vazio. Países pequenos
